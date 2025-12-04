@@ -1,0 +1,18 @@
+# cli tools
+brew "git"
+brew "neovim"
+
+
+# cask
+cask "zen"
+cask "visual-studio-code"
+cask "helium-browser"
+cask "spotify"
+cask "figma"
+cask "displaylink"
+cask "hiddenbar"
+cask "raycast"
+cask "whatsapp"
+cask "notion"
+cask "miro"
+cask "lunar"
