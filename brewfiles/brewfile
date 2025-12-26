@@ -4,15 +4,30 @@ brew "neovim"
 
 
 # cask
+
+# Browser
 cask "zen"
-cask "visual-studio-code"
 cask "helium-browser"
-cask "spotify"
+
+# Coding
+cask "visual-studio-code"
+cask "githubdesktop"
+
+# Creative
 cask "figma"
+cask "miro"
+
+# Utilities 
 cask "displaylink"
 cask "hiddenbar"
 cask "raycast"
-cask "whatsapp"
-cask "notion"
-cask "miro"
 cask "lunar"
+cask "hyperkey"
+cask "notion"
+cask "notion"
+cask "aerospace"
+cask "unnaturalscrollwheels"
+
+# Personal
+cask "spotify"
+cask "whatsapp"
