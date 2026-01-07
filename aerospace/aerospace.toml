@@ -194,6 +194,15 @@ on-mode-changed = []
     alt-shift-y = 'move-node-to-workspace Y'
     alt-shift-z = 'move-node-to-workspace Z'
 
+    [[on-window-detect]]
+    if.app-id = 'net.imput.helium'
+    run = 'move-node-to-workspace 1'
+
+
+    [[on-window-detect]]
+    if.app-id = 'net.kovidgoyal.kitty'
+    run = 'move-node-to-workspace 4'
+
     # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
     alt-tab = 'workspace-back-and-forth'
     # See: https://nikitabobko.github.io/AeroSpace/commands#move-workspace-to-monitor

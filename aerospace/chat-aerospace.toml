@@ -1,0 +1,178 @@
+# ==================================================
+# AeroSpace config (v3)
+# Path: ~/.config/aerospace/aerospace.toml
+# ==================================================
+
+config-version = 2
+start-at-login = true
+
+# --- Default tiling behavior ---
+default-root-container-layout = 'tiles'
+default-root-container-orientation = 'auto'
+
+# Workspaces 1–9 altijd “alive” houden (ook als ze leeg zijn)
+persistent-workspaces = ["1","2","3","4","5","6","7","8","9"]
+
+# --- Geen gaps/padding ---
+[gaps]
+inner.horizontal = 0
+inner.vertical = 0
+outer.left = 0
+outer.right = 0
+outer.top = 0
+outer.bottom = 0
+
+# Mouse volgt focus wanneer je van monitor wisselt (handig bij multi-monitor)
+on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
+
+# ==================================================
+# Workspace -> monitor assignment (jouw model)
+#   - Main:      1–7
+#   - Secondary: 9  (bij 2 monitors)
+#   - Tertiary:  8  (bij 3 monitors: monitor #3 van links->rechts)
+# ==================================================
+[workspace-to-monitor-force-assignment]
+1 = 'main'
+2 = 'main'
+3 = 'main'
+4 = 'main'
+5 = 'main'
+6 = 'main'
+7 = 'main'
+
+9 = 'secondary'
+8 = 3
+
+# ==================================================
+# App -> workspace rules
+# (pas gerust app-ids aan op basis van: aerospace list-apps)
+# ==================================================
+[[on-window-detected]]
+if.app-id = 'com.google.Chrome'
+run = ['move-node-to-workspace 1']
+
+[[on-window-detected]]
+if.app-id = 'org.mozilla.firefox'
+run = ['move-node-to-workspace 1']
+
+[[on-window-detected]]
+if.app-id = 'com.apple.Safari'
+run = ['move-node-to-workspace 1']
+
+[[on-window-detected]]
+if.app-id = 'com.figma.Desktop'
+run = ['move-node-to-workspace 2']
+
+[[on-window-detected]]
+if.app-id = 'com.microsoft.teams2'
+run = ['move-node-to-workspace 3']
+
+[[on-window-detected]]
+if.app-id = 'com.microsoft.Outlook'
+run = ['move-node-to-workspace 3']
+
+# ==================================================
+# Floating rules
+# ==================================================
+[[on-window-detected]]
+if.app-id = 'com.apple.finder'
+run = ['layout floating']
+
+# ==================================================
+# Key mapping
+# ==================================================
+[key-mapping]
+preset = 'qwerty'
+
+# ==================================================
+# Bindings — MAIN MODE
+# ==================================================
+[mode.main.binding]
+
+# Focus wisselen (alt) — over monitors heen op basis van fysieke layout
+alt-h = 'focus --boundaries all-monitors-outer-frame --boundaries-action wrap-around-all-monitors left'
+alt-j = 'focus --boundaries all-monitors-outer-frame --boundaries-action wrap-around-all-monitors down'
+alt-k = 'focus --boundaries all-monitors-outer-frame --boundaries-action wrap-around-all-monitors up'
+alt-l = 'focus --boundaries all-monitors-outer-frame --boundaries-action wrap-around-all-monitors right'
+
+# Venster verplaatsen (alt+shift)
+alt-shift-h = 'move --boundaries all-monitors-outer-frame left'
+alt-shift-j = 'move --boundaries all-monitors-outer-frame down'
+alt-shift-k = 'move --boundaries all-monitors-outer-frame up'
+alt-shift-l = 'move --boundaries all-monitors-outer-frame right'
+
+# Workspaces (alt)
+alt-1 = 'workspace 1'
+alt-2 = 'workspace 2'
+alt-3 = 'workspace 3'
+alt-4 = 'workspace 4'
+alt-5 = 'workspace 5'
+alt-6 = 'workspace 6'
+alt-7 = 'workspace 7'
+alt-8 = 'workspace 8' # (3e monitor wanneer aanwezig)
+alt-9 = 'workspace 9' # (secondary monitor wanneer aanwezig)
+
+# Window naar workspace (alt+shift)
+alt-shift-1 = 'move-node-to-workspace 1'
+alt-shift-2 = 'move-node-to-workspace 2'
+alt-shift-3 = 'move-node-to-workspace 3'
+alt-shift-4 = 'move-node-to-workspace 4'
+alt-shift-5 = 'move-node-to-workspace 5'
+alt-shift-6 = 'move-node-to-workspace 6'
+alt-shift-7 = 'move-node-to-workspace 7'
+alt-shift-8 = 'move-node-to-workspace 8'
+alt-shift-9 = 'move-node-to-workspace 9'
+
+# Tiling <-> Floating toggle (per window)
+alt-f = 'layout floating tiling'
+
+# Fullscreen toggle (AeroSpace fullscreen)
+alt-enter = 'fullscreen'
+
+# Service/debug mode
+alt-shift-semicolon = 'mode service'
+
+# ==================================================
+# Bindings — SERVICE MODE (debug / onderhoud)
+# ==================================================
+[mode.service.binding]
+
+# Reload config + terug
+esc = ['reload-config', 'mode main']
+
+# Layout reset voor huidige workspace
+r = ['flatten-workspace-tree', 'mode main']
+
+# Debug (let op: bedoeld voor bugreports; output kan veranderen)
+d = ['debug-windows', 'mode main']
+
+# Inspectie / troubleshooting
+m = ['exec-and-forget aerospace list-monitors', 'mode main']
+w = ['exec-and-forget aerospace list-windows', 'mode main']
+a = ['exec-and-forget aerospace list-apps', 'mode main']
+
+# ==================================================
+# Overige opties (voorbeelden) — UITGESCHAKELD
+# ==================================================
+
+# --- Stop aan de rand i.p.v. wrap-around ---
+# alt-h = 'focus --boundaries all-monitors-outer-frame --boundaries-action stop left'
+
+# --- Workspace 8 liever op een specifieke monitor-naam (regex) als je 3 monitors hebt ---
+# [workspace-to-monitor-force-assignment]
+# 8 = '^lg ultrafine$'          # exacte match (case-insensitive)
+# 9 = ['secondary', 'dell']     # fallback patterns (eerste match wint)
+
+# --- Finder niet altijd floating: toggle per window met alt-f (en verwijder de Finder rule hierboven) ---
+# [[on-window-detected]]
+# if.app-id = 'com.apple.finder'
+# run = []  # (dus niets automatisch)
+
+# --- Gaps toevoegen ---
+# [gaps]
+# inner.horizontal = 10
+# inner.vertical = 10
+# outer.left = 10
+# outer.right = 10
+# outer.top = 10
+# outer.bottom = 10
