@@ -2,7 +2,7 @@
 Dotfiles for my **Mac** machines 
 
 
-```
+```tree
 ├── aerospace
 │   ├── aerospace.toml
 │   └── chat-aerospace.toml
