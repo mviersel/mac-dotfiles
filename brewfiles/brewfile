@@ -2,12 +2,14 @@
 brew "git"
 brew "neovim"
 brew "tree"
+brew "ripgrep"
 
 # cask
 
 # Browser
 cask "zen"
 cask "helium-browser"
+cask "qutebrowser"
 
 # Coding
 cask "visual-studio-code"

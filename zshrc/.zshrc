@@ -17,3 +17,4 @@ function nvims() {
 }
 
 bindkey -s ^a "nvims\n"
+fastfetch
