@@ -1,0 +1,41 @@
+;; NOT FINAL
+;; Home row mods and arrow keys for macbook keyboard
+
+(defcfg
+  process-unmapped-keys yes
+)
+
+(defsrc
+a s d f j k l ;
+rmet
+)
+
+(defvar
+  tap-time 200
+  hold-time 150
+)
+
+(defalias
+to0 (layer-switch base0)
+to1 (layer-switch base1)
+
+fl1 (tap-hold-release 200 (@to1))
+
+  a (tap-hold $tap-time $hold-time a lctl)
+  s (tap-hold $tap-time $hold-time s lalt)
+  d (tap-hold $tap-time $hold-time d lsft)
+  f (tap-hold $tap-time $hold-time f lmet)
+
+  j (tap-hold $tap-time $hold-time a lmet)
+  k (tap-hold $tap-time $hold-time a lsft)
+  l (tap-hold $tap-time $hold-time a lalt)
+  ; (tap-hold $tap-time $hold-time a lctl)
+)
+
+(deflayer base0
+  @a @s @d @f @j @k @l @;
+  @fl1
+)
+
+(deflayer base1
+)

@@ -1,0 +1,74 @@
+;; =========================
+;;  KANATA – macOS MBP 16"
+;;  grv (~/` of §/± toets links van 1) togglet homerow mods (base1)
+;;  rmet togglet fnlayer (altijd)
+;; =========================
+
+(defcfg
+  process-unmapped-keys yes
+)
+
+(defsrc
+  esc  f1  f2  f3  f4  f5  f6  f7  f8  f9  f10 f11 f12
+  grv  1   2   3   4   5   6   7   8   9   0   -   =   bspc
+  tab  q   w   e   r   t   y   u   i   o   p   [   ]   \
+  caps a   s   d   f   g   h   j   k   l   ;   '   ret
+  lsft z   x   c   v   b   n   m   ,   .   /   rsft
+  lctl lalt lmet            spc            rmet ralt rctl
+)
+
+(defalias
+  ;; Toggle homerow mods via grv
+  ;; Tap: toggle base1 aan/uit, Hold: originele grv (handig bij US-Intl voor `~)
+  hrT (tap-hold-release 200 grv (layer-toggle base1))
+
+  ;; rmet is ALTIJD fnlayer toggle (geen Command meer)
+  fnT (layer-toggle fnlayer)
+
+  ;; Home-row mods (alleen in base1)
+  aCtl (tap-hold-release 200 a lctl)
+  sOpt (tap-hold-release 200 s lalt)
+  dSft (tap-hold-release 200 d lsft)
+  fCmd (tap-hold-release 200 f lmet)
+
+  jCtl (tap-hold-release 200 j rctl)
+  kOpt (tap-hold-release 200 k ralt)
+  lSft (tap-hold-release 200 l rsft)
+  sCmd (tap-hold-release 200 ; rmet)
+)
+
+;; =========================
+;; BASE 0 – standaard
+;; =========================
+(deflayer base0
+  _    _   _   _   _   _   _   _   _   _   _   _   _
+  @hrT _   _   _   _   _   _   _   _   _   _   _   _   _
+  _    _   _   _   _   _   _   _   _   _   _   _   _   _
+  _    _   _   _   _   _   _   _   _   _   _   _   _
+  _    _   _   _   _   _   _   _   _   _   _
+  _    _   _            _            @fnT _   _
+)
+
+;; =========================
+;; BASE 1 – standaard + home-row mods
+;; =========================
+(deflayer base1
+  _    _   _   _   _   _   _   _   _   _   _   _   _
+  @hrT _   _   _   _   _   _   _   _   _   _   _   _   _
+  _    _   _   _   _   _   _   _   _   _   _   _   _   _
+  _    @aCtl @sOpt @dSft @fCmd _ _ @jCtl @kOpt @lSft @sCmd _ _ _
+  _    _   _   _   _   _   _   _   _   _   _
+  _    _   _            _            @fnT _   _
+)
+
+;; =========================
+;; FNLAYER – togglebaar via rmet
+;; =========================
+(deflayer fnlayer
+  _    _   _   _   _   _   _   _   _   _   _   _   _
+  @hrT f1  f2  f3  f4  f5  f6  f7  f8  f9  f10 f11 f12 _
+  _    _   _   _   _   _   _   _   _   _   _   _   _   _
+  _    _   _   _   _   _   left down up right _ _ _
+  _    _   _   _   _   _   _   _   _   _   _
+  _    _   _            _            @fnT _   _
+)
