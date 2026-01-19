@@ -29,6 +29,7 @@ cask "notion"
 cask "notion"
 cask "aerospace"
 cask "unnaturalscrollwheels"
+cask "Karabiner-Elements"
 
 # Personal
 cask "spotify"
