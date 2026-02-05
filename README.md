@@ -1,8 +1,21 @@
 # mac-dotfiles
 Dotfiles for my **Mac** machines 
 
+This repo has two main folders. 
 
-```tree
+**brewfiles** holds the list of programs used to quickly install using homebrew.
+```bash
+cd ~/mac-dotfiles/brewfiles
+brew bundle brewfile
+```
+
+**stow** Which holds all the config files. It can be used with the following command:
+```bash
+cd ~/mac-dotfiles/stow
+stow .
+```
+
+<!-- ```bash
 ├── aerospace
 │   ├── aerospace.toml
 │   └── chat-aerospace.toml
@@ -27,4 +40,12 @@ Dotfiles for my **Mac** machines
 │   ├── keybindings.json
 │   └── settings.json
 └── zshrc
+``` -->
+
+## brewfiles
+To install all the programs from the brew file:
+
+```bash
+brew bundle --file .dotfiles/brewfile
 ```
+
