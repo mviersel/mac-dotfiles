@@ -1,6 +1,11 @@
 # mac-dotfiles
 Dotfiles for my **Mac** machines 
 
+Install [homebrew](https://brew.sh/):
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
 This repo has two main folders. 
 
 **brewfiles** holds the list of programs used to quickly install using homebrew.
