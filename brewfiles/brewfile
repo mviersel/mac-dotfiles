@@ -1,6 +1,7 @@
 tap "nikitabobko/tap"
 
 brew "fastfetch"
+brew "tmux"
 brew "fzf"
 brew "git"
 brew "neovim"
@@ -30,3 +31,4 @@ cask "bambu-studio"
 cask "unnaturalscrollwheels"
 cask "microsoft-teams"
 cask "microsoft-outlook"
+cask "hyperkey"
