@@ -16,5 +16,10 @@ function nvims() {
   NVIM_APPNAME=$config nvim $@
 }
 
+function cl() {
+	clear
+	fastfetch
+}
+
 bindkey -s ^a "nvims\n"
 fastfetch

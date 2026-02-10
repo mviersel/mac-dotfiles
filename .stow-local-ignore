@@ -1,0 +1,9 @@
+^\.git$
+^\.gitignore$
+^README\.md$
+^brewfiles$
+^playground$
+^\.DS_Store$
+^scripts$
+^docs$
+^notes$

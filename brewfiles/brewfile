@@ -1,36 +1,14 @@
-# Cli tools
+tap "nikitabobko/tap"
+brew "fastfetch"
 brew "git"
 brew "neovim"
+brew "stow"
 brew "tree"
-brew "ripgrep"
-
-# cask
-
-# Browser
-cask "zen"
+brew "vim"
+cask "nikitabobko/tap/aerospace"
+cask "ghostty"
+cask "github"
 cask "helium-browser"
-cask "qutebrowser"
-
-# Coding
-cask "visual-studio-code"
-cask "githubdesktop"
-
-# Creative
-cask "figma"
-cask "miro"
-
-# Utilities 
-cask "displaylink"
-cask "hiddenbar"
+cask "logi-options+"
 cask "raycast"
-cask "lunar"
-cask "hyperkey"
-cask "notion"
-cask "notion"
-cask "aerospace"
-cask "unnaturalscrollwheels"
-cask "Karabiner-Elements"
-
-# Personal
-cask "spotify"
-cask "whatsapp"
+cask "zen"

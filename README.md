@@ -11,7 +11,7 @@ This repo has two main folders.
 **brewfiles** holds the list of programs used to quickly install using homebrew.
 ```bash
 cd ~/mac-dotfiles/brewfiles
-brew bundle brewfile
+brew bundle install --file brewfile
 ```
 
 **stow** Which holds all the config files. It can be used with the following command:
