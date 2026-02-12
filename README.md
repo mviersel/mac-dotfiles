@@ -54,3 +54,10 @@ To install all the programs from the brew file:
 brew bundle --file .dotfiles/brewfile
 ```
 
+## Firefox extensions
+- [hide youtube shorts](https://addons.mozilla.org/en-US/firefox/addon/hide-youtube-shorts/)
+- [bitwarden](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/)
+- [sponsor block](https://addons.mozilla.org/en-US/firefox/addon/sponsorblock/)
+- [ublock origin](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/)
+- [vimium](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/)
+- [darkreader](https://addons.mozilla.org/nl/firefox/addon/darkreader/)
