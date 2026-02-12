@@ -21,5 +21,13 @@ function cl() {
 	fastfetch
 }
 
+function brundle() {
+  brew bundle --file ~/mac-dotfiles/brewfiles/brewfile
+}
+
+function stowr() {
+  stow -v -t "$HOME"
+}
+
 bindkey -s ^a "nvims\n"
 fastfetch
