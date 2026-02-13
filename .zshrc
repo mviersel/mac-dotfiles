@@ -1,8 +1,10 @@
 # Added by LM Studio CLI (lms)
 export PATH="$PATH:/Users/m98446/.lmstudio/bin"
 # End of LM Studio CLI section
+export PATH="$PATH:/opt/homebrew/bin/ffmpeg"
 
 alias obidian="NVIM_APPNAME=obidian nvim"
+alias nvif='nvim $(fzf)'
 
 function nvims() {
   items=("default", "obidian")
@@ -24,6 +26,8 @@ function cl() {
 function brundle() {
   brew bundle --file ~/mac-dotfiles/brewfiles/brewfile
 }
+
+
 
 function stowr() {
   stow -v -t "$HOME"
