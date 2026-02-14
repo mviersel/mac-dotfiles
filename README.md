@@ -20,7 +20,7 @@ cd ~/mac-dotfiles/stow
 stow .
 ```
 
-<!-- ```bash
+```bash
 ├── aerospace
 │   ├── aerospace.toml
 │   └── chat-aerospace.toml
@@ -45,7 +45,7 @@ stow .
 │   ├── keybindings.json
 │   └── settings.json
 └── zshrc
-``` -->
+```
 
 ## brewfiles
 To install all the programs from the brew file:
@@ -61,3 +61,5 @@ brew bundle --file .dotfiles/brewfile
 - [ublock origin](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/)
 - [vimium](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/)
 - [darkreader](https://addons.mozilla.org/nl/firefox/addon/darkreader/)
+- [youtube windowed fullscreen](https://addons.mozilla.org/en-US/firefox/addon/youtube-window-fullscreen/)
+
