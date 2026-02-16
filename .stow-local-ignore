@@ -3,6 +3,7 @@
 ^README\.md$
 ^brewfiles$
 ^playground$
+^extensionsConfigs$
 ^\.DS_Store$
 ^scripts$
 ^docs$
