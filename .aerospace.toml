@@ -102,6 +102,7 @@ on-mode-changed = []
 
 
 [mode.main.binding]
+    alt-enter = 'exec-and-forget open -a /Applications/Ghostty.app/'
 
     # All possible keys:
     # - Letters.        a, b, c, ..., z
@@ -228,7 +229,6 @@ on-mode-changed = []
     run = ['move-node-to-workspace 1']
 
     [[on-window-detected]]
-
     if.app-id = 'com.electron.realtimeboard'
     run = ['move-node-to-workspace 1']
 
@@ -237,6 +237,9 @@ on-mode-changed = []
     if.app-id = 'app.zen-browser.zen'
     run = ['move-node-to-workspace 2']
 
+    [[on-window-detected]]
+    if.app-id = 'app.zen-browser.zen'
+    run = ['move-node-to-workspace 2']
     # Workspace 3
 
     [[on-window-detected]]
@@ -265,4 +268,6 @@ on-mode-changed = []
     # Workspace 8
 
     # Workspace 9
+
+    # exec
 
