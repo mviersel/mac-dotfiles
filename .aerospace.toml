@@ -205,9 +205,9 @@ on-mode-changed = []
     if.app-id = 'com.apple.finder'
     run = ['layout floating']
 
-    [[on-window-detected]]
-    if.app-id = 'net.whatsapp.WhatsApp'
-    run = ['layout floating']
+    # [[on-window-detected]]
+    # if.app-id = 'net.whatsapp.WhatsApp'
+    # run = ['layout floating']
 
     # on window detect move to node
     # [[on-window-detected]] 
@@ -232,42 +232,50 @@ on-mode-changed = []
     if.app-id = 'com.electron.realtimeboard'
     run = ['move-node-to-workspace 1']
 
+    [[on-window-detected]]
+    if.app-id = 'com.microsoft.Word'
+    run = ['move-node-to-workspace 1']
+
     # Workspace 2
+
     [[on-window-detected]]
     if.app-id = 'app.zen-browser.zen'
     run = ['move-node-to-workspace 2']
 
     [[on-window-detected]]
-    if.app-id = 'app.zen-browser.zen'
+    if.app-id = 'net.imput.helium'
     run = ['move-node-to-workspace 2']
+
     # Workspace 3
 
     [[on-window-detected]]
-    if.app-id = 'md.obsidian'
+    if.app-id = 'com.microsoft.teams2'
+    run = ['move-node-to-workspace 3']
+
+    [[on-window-detected]]
+    if.app-id = 'com.microsoft.Outlook'
     run = ['move-node-to-workspace 3']
 
     # Workspace 4
 
-    [[on-window-detected]]
-    if.app-id = 'com.microsoft.teams2'
-    run = ['move-node-to-workspace 4']
-
-    [[on-window-detected]]
-    if.app-id = 'com.microsoft.Outlook'
-    run = ['move-node-to-workspace 4']
-
     # Workspace 5
 
-    [[on-window-detected]]
-    if.app-id = 'com.spotify.client'
-    run = ['move-node-to-workspace 5']
     # Workspace 6
 
     # Workspace 7
 
+    [[on-window-detected]]
+    if.app-id = 'net.whatsapp.WhatsApp'
+    run = ['move-node-to-workspace 7']
+
     # Workspace 8
+
+    [[on-window-detected]]
+    if.app-id = 'md.obsidian'
+    run = ['move-node-to-workspace 8']
 
     # Workspace 9
 
-    # exec
-
+    [[on-window-detected]]
+    if.app-id = 'com.spotify.client'
+    run = ['move-node-to-workspace 9']
