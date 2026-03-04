@@ -27,8 +27,6 @@ function brundle() {
   brew bundle --file ~/mac-dotfiles/brewfiles/brewfile
 }
 
-
-
 function stowr() {
   stow -v -t "$HOME"
 }
