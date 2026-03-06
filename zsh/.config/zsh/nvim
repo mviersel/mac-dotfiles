@@ -1,4 +1,0 @@
-cl() {
-  printf "\033c"
-  fastfetch
-}
