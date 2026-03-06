@@ -31,5 +31,12 @@ function stowr() {
   stow -v -t "$HOME"
 }
 
+ibrew() {
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+}
+
 bindkey -s ^a "nvims\n"
 fastfetch
+
+# Created by `pipx` on 2026-03-05 14:24:11
+export PATH="$PATH:/Users/martijn/.local/bin"
