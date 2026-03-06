@@ -1,10 +1,20 @@
+# Git & repo meta
 ^\.git$
 ^\.gitignore$
+^\.stowrc$
+^\.stow-local-ignore$
 ^README\.md$
-^brewfiles$
-^playground$
-^extensionsConfigs$
-^\.DS_Store$
-^scripts$
+
+# macOS rommel (ook in submappen)
+\.DS_Store$
+
+# Niet-stowbare mappen
+^browser-exports$
 ^docs$
 ^notes$
+^scripts$
+^playground$
+
+# Root bestanden die geen packages zijn
+^Brewfile$
+^setup\.sh$
