@@ -1,5 +1,6 @@
 source ~/.config/zsh/functions.zsh
 source ~/.config/zsh/aliases.zsh
+source ~/.config/zsh/ytdlp.zsh
 
 # Added by LM Studio CLI (lms)
 export PATH="$PATH:/Users/m98446/.lmstudio/bin"
