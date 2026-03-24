@@ -62,6 +62,7 @@ brew bundle --file .dotfiles/brewfile
 
 <details>
   <summary>Firefox extensions and tweaks</summary>
+
 - [hide youtube shorts](https://addons.mozilla.org/en-US/firefox/addon/hide-youtube-shorts/)
 - [zen internet](https://addons.mozilla.org/nl/firefox/addon/zen-internet/)
 - [bitwarden](https://addons.mozilla.org/en-US/firefox/addon/bitwarden-password-manager/)
@@ -71,9 +72,10 @@ brew bundle --file .dotfiles/brewfile
 - [darkreader](https://addons.mozilla.org/nl/firefox/addon/darkreader/)
 - [youtube windowed fullscreen](https://addons.mozilla.org/en-US/firefox/addon/youtube-window-fullscreen/)
 - [Raindrop](https://addons.mozilla.org/en-US/firefox/addon/raindropio/)
-## Zen mods
+  - Zen mods
 - [transparent zen](https://zen-browser.app/mods/642854b5-88b4-4c40-b256-e035532109df/?q=trans)
-## scripts
+ - scripts
 - [Greasy fork](https://greasyfork.org/id/scripts/443277-bypass-pahe-links)
+
 </details>
 
