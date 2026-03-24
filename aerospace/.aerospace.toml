@@ -205,9 +205,9 @@ on-mode-changed = []
     if.app-id = 'com.apple.finder'
     run = ['layout floating']
 
-    # [[on-window-detected]]
-    # if.app-id = 'net.whatsapp.WhatsApp'
-    # run = ['layout floating']
+    [[on-window-detected]]
+    if.app-id = 'net.whatsapp.WhatsApp'
+    run = ['layout floating']
 
     # on window detect move to node
     # [[on-window-detected]] 
@@ -266,6 +266,10 @@ on-mode-changed = []
 
     [[on-window-detected]]
     if.app-id = 'net.whatsapp.WhatsApp'
+    run = ['move-node-to-workspace 7']
+
+    [[on-window-detected]]
+    if.app-id = 'com.BASCOM-CLIENT'
     run = ['move-node-to-workspace 7']
 
     # Workspace 8
