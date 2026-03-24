@@ -4,7 +4,6 @@ set -euo pipefail
 DOTFILES_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 PACKAGES=(
-  kanata
   aerospace
   fastfetch
   ghostty
@@ -14,6 +13,7 @@ PACKAGES=(
   sketchybar
   tmux
   zsh
+  btop
 )
 
 log() {
@@ -72,5 +72,16 @@ for pkg in "${PACKAGES[@]}"; do
     echo "-> overslaan: $pkg bestaat niet"
   fi
 done
+
+log "macOS instellingen toepassen"
+
+if [[ -d "$DOTFILES_DIR/macos" ]]; then
+  for script in "$DOTFILES_DIR"/macos/*.sh; do
+    echo "-> $(basename "$script")"
+    bash "$script"
+  done
+else
+  echo "-> geen macos map gevonden"
+fi
 
 log "Setup voltooid"
