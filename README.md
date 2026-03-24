@@ -60,7 +60,7 @@ To install all the programs from the brew file:
 brew bundle --file .dotfiles/brewfile
 ```
 
-<detail>
+<details>
   <summary>Firefox extensions and tweaks</summary>
 - [hide youtube shorts](https://addons.mozilla.org/en-US/firefox/addon/hide-youtube-shorts/)
 - [zen internet](https://addons.mozilla.org/nl/firefox/addon/zen-internet/)
@@ -75,5 +75,5 @@ brew bundle --file .dotfiles/brewfile
 - [transparent zen](https://zen-browser.app/mods/642854b5-88b4-4c40-b256-e035532109df/?q=trans)
 ## scripts
 - [Greasy fork](https://greasyfork.org/id/scripts/443277-bypass-pahe-links)
-</detail>
+</details>
 
