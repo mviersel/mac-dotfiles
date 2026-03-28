@@ -10,6 +10,8 @@ alias gc="git commit"
 
 alias v="nvim"
 
+alias treload="tmux source-file ~/.tmux.conf"
+
 mkcd() {
   mkdir -p "$1" && cd "$1"
 }
