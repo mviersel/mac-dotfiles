@@ -10,6 +10,9 @@ defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/Docu
 # Default view: Columns
 defaults write com.apple.finder FXPreferredViewStyle -string "clmv"
 
+# Always show folder on top when solted by name
+defaults write com.apple.finder _FXSortFoldersFirst -bool true
+
 # Show all filename extensions
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 
