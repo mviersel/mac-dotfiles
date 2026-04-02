@@ -15,6 +15,7 @@ brew "python"
 brew "yt-dlp"
 brew "ffmpeg"
 brew "powerlevel10k"
+brew "zsh-autosuggestions"
 
 cask "nikitabobko/tap/aerospace"
 cask "ghostty"
