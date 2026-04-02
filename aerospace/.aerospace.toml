@@ -11,10 +11,9 @@ config-version = 2
 # after-startup-command = ['exec-and-forget sketchybar']
 
 # Notify sketchybar on workspace change
-exec-on-workspace-change = ['/bin/bash', '-c',
-    'sketchybar --trigger aerospace_workspace_change FOCUSED_WORKSPACE=$AEROSPACE_FOCUSED_WORKSPACE PREV_WORKSPACE=$AEROSPACE_PREV_WORKSPACE'
-]
-
+# [exec-on-workspace-change] run = [,
+#   "sketchybar --trigger aerospace_workspace_change AEROSPACE_FOCUSED_WORKSPACE=$AEROSPACE_FOCUSED_WORKSPACE"
+# ]
 
 # Start AeroSpace at login
 start-at-login = true
@@ -41,7 +40,8 @@ default-root-container-orientation = 'auto'
 # See https://nikitabobko.github.io/AeroSpace/guide#on-focus-changed-callbacks
 # See https://nikitabobko.github.io/AeroSpace/commands#move-mouse
 # Fallback value (if you omit the key): on-focused-monitor-changed = []
-on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
+
+# on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
 
 # You can effectively turn off macOS "Hide application" (cmd-h) feature by toggling this flag
 # Useful if you don't use this macOS feature, but accidentally hit cmd-h or cmd-alt-h key
@@ -73,12 +73,12 @@ on-mode-changed = []
 #                 See:
 #                 https://nikitabobko.github.io/AeroSpace/guide#assign-workspaces-to-monitors
 [gaps]
-    inner.horizontal = 5
-    inner.vertical =   5
-    outer.left =       5
-    outer.bottom =     5
-    outer.top =        5
-    outer.right =      5
+    inner.horizontal = 8
+    inner.vertical =   8
+    outer.left =       8
+    outer.bottom =     8
+    outer.top =        8
+    outer.right =      8
 
 # 'main' binding mode declaration
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
@@ -136,7 +136,7 @@ on-mode-changed = []
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#layout
     alt-slash = 'layout tiles horizontal vertical'
-    alt-comma = 'layout accordion horizontal vertical'
+    # alt-comma = 'layout accordion horizontal vertical'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#focus
     alt-h = 'focus left --boundaries all-monitors-outer-frame'
@@ -176,6 +176,11 @@ on-mode-changed = []
     alt-shift-8 = 'move-node-to-workspace 8'
     alt-shift-9 = 'move-node-to-workspace 9'
 
+    alt-shift-comma = 'move-node-to-monitor --wrap-around --focus-follows-window prev'
+    alt-shift-period = 'move-node-to-monitor --wrap-around --focus-follows-window next'
+    # alt-ctrl-shift-k = 'move-node-to-monitor --wrap-around up'
+    # alt-ctrl-shift-h = 'move-node-to-monitor --wrap-around right'
+
     # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
     alt-tab = 'workspace-back-and-forth'
     # See: https://nikitabobko.github.io/AeroSpace/commands#move-workspace-to-monitor
@@ -214,15 +219,17 @@ on-mode-changed = []
     # if.app-id = 'com.figma.Desktop'
     # run = 'move-node-to-workspace f'
 
+# Moving around
+
     # Workspace 1 -- working
 
-    [[on-window-detected]]
-    if.app-id = 'com.mitchellh.ghostty'
-    run = ['move-node-to-workspace 1']
-
-    [[on-window-detected]]
-    if.app-id = 'net.kovidgoyal.kitty'
-    run = ['move-node-to-workspace 1']
+    # [[on-window-detected]]
+    # if.app-id = 'com.mitchellh.ghostty'
+    # run = ['move-node-to-workspace 1']
+    #
+    # [[on-window-detected]]
+    # if.app-id = 'net.kovidgoyal.kitty'
+    # run = ['move-node-to-workspace 1']
 
     [[on-window-detected]]
     if.app-id = 'com.figma.Desktop'
