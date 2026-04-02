@@ -15,3 +15,8 @@ alias treload="tmux source-file ~/.tmux.conf"
 mkcd() {
   mkdir -p "$1" && cd "$1"
 }
+
+alias bar-start="brew services start sketchybar"
+alias bar-stop="brew services stop sketchybar"
+alias bar-restart="brew services restart sketchybar"
+alias bar-reload="sketchybar --reload"
