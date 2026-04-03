@@ -3,6 +3,9 @@ alias brundle="brew bundle --file ~/mac-dotfiles/brewfiles/brewfile "
 
 alias la="ls -la"
 
+alias tma="tmux attach"
+alias tmd="tmux detach"
+
 # git 
 alias gs="git status"
 alias gp="git pull"
