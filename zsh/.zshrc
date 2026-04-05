@@ -7,6 +7,7 @@
 
 #for auto zsh-autosuggestions in zsh
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
 
 source ~/.config/zsh/functions.zsh
 source ~/.config/zsh/aliases.zsh
