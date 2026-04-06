@@ -5,6 +5,9 @@
 #   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 # fi
 
+export EDITOR=nvim
+export VISUAL=nvim
+
 #for auto zsh-autosuggestions in zsh
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
