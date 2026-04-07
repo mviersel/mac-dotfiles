@@ -1,6 +1,7 @@
 tap "nikitabobko/tap"
 tap "TheBoredTeam/boring-notch"
 
+brew "font-sf-pro"
 brew "fastfetch"
 brew "btop"
 brew "cmatrix"
@@ -46,3 +47,4 @@ cask "iina"
 cask "pearcleaner"
 cask "Karabiner-Elements"
 cask "latest"
+cask "sf-symbols"
