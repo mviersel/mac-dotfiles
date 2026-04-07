@@ -42,6 +42,7 @@ function nvims() {
 function cl() {
 	clear
 	fastfetch
+  echo "(y)=Yazi (t)=Tmux (v)=nVim"
 }
 
 function brundle() {
@@ -60,4 +61,5 @@ bindkey -s ^a "nvims\n"
 
 alias nvik="NVIM_APPNAME='nvik' nvim"
 
+echo "(y)=Yazi (t)=Tmux (v)=nVim"
 fastfetch
