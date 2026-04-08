@@ -7,9 +7,9 @@ alias tma="tmux attach"
 alias tmd="tmux detach"
 
 # git 
-alias gs="git status"
-alias gp="git pull"
-alias gc="git commit"
+alias gis="git status"
+alias gip="git pull"
+alias gim="git commit"
 
 alias v="nvim"
 alias t="tmux"
