@@ -18,6 +18,7 @@ brew "ffmpeg"
 brew "powerlevel10k"
 brew "zsh-autosuggestions"
 brew "yazi"
+brew "stylua"
 
 cask "nikitabobko/tap/aerospace"
 cask "ghostty"
