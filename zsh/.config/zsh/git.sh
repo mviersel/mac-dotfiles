@@ -9,4 +9,5 @@ gif() {
 
 gic() {
   git commit -m "$*"
+  git push
 }

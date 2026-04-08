@@ -6,11 +6,6 @@ alias la="ls -la"
 alias tma="tmux attach"
 alias tmd="tmux detach"
 
-# git 
-alias gis="git status"
-alias gip="git pull"
-alias gim="git commit"
-
 alias v="nvim"
 alias t="tmux"
 
