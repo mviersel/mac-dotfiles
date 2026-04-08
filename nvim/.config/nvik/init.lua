@@ -16,7 +16,16 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-	"folke/tokyonight.nvim",
+	{
+		"shaunsingh/nord.nvim",
+		lazy = false,
+		priority = 1000,
+		config = function()
+			vim.g.nord_contrast = true
+			vim.g.nord_borders = true
+			vim.cmd.colorscheme("nord")
+		end,
+	},
 
 	{
 		"stevearc/conform.nvim",
@@ -35,7 +44,6 @@ require("lazy").setup({
 		version = "*",
 		dependencies = {
 			"nvim-lua/plenary.nvim",
-			-- optional but recommended
 			{ "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
 		},
 	},
@@ -50,7 +58,13 @@ require("lazy").setup({
 		},
 	},
 
-	{},
+	{
+		"nvim-java/nvim-java",
+		config = function()
+			require("java").setup()
+			vim.lsp.enable("jdtls")
+		end,
+	},
 })
 
 -- ========= SETTINGS =========
