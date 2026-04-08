@@ -1,3 +1,6 @@
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
+
 print("init.lua loaded")
 -- ========= LAZY (PLUGIN MANAGER) =========
 
@@ -66,6 +69,14 @@ require("lazy").setup({
 		end,
 	},
 })
+
+-- ========== KEYMAPS =========
+
+vim.keymap.set("n", "<leader>q", ":q<CR>")
+vim.keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<CR>")
+vim.keymap.set("n", "<leader>f", function()
+	require("conform").format({ async = true })
+end, { desc = "Format file" })
 
 -- ========= SETTINGS =========
 
