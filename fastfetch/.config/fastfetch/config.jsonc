@@ -1,14 +1,14 @@
 {
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
   "logo": {
-    "type": "builtin",
+    "type": "small",
     "source": "apple",
     "height": 15,
     "width": 15,
     "padding": {
-      "top": 4,
-      "left": 5,
-      "right": 5,
+      "top": 2,
+      "left": 10,
+      "right": 2,
     },
   },
   "modules": [
