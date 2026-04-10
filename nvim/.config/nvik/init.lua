@@ -83,6 +83,9 @@ require("lazy").setup({
 
 -- ========== KEYMAPS =========
 
+vim.keymap.set("n", "<leader>h", "^", { desc = "Line start" })
+vim.keymap.set("n", "<leader>l", "$", { desc = "Line end" })
+
 vim.keymap.set("n", "<leader>q", ":q<CR>")
 vim.keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<CR>")
 vim.keymap.set("n", "<leader>f", function()
@@ -92,6 +95,8 @@ end, { desc = "Format file" })
 -- ========= SETTINGS =========
 
 vim.opt.number = true
+vim.opt.wrap = true
+vim.opt.scrolloff = 5
 vim.opt.relativenumber = true
 vim.opt.expandtab = true
 vim.opt.shiftwidth = 4
