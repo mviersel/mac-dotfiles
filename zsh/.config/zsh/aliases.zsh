@@ -5,6 +5,7 @@ alias la="ls -la"
 
 alias tma="tmux attach"
 alias tmd="tmux detach"
+alias tmls="tmux ls"
 
 alias v="nvim"
 alias t="tmux"
