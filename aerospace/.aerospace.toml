@@ -267,11 +267,11 @@ on-mode-changed = []
 
     # Workspace 5
 
+    # Workspace 6
+
     [[on-window-detected]]
     if.app-id = 'com.brave.Browser'
-    run = ['move-node-to-workspace 7']
-
-    # Workspace 6
+    run = ['move-node-to-workspace 6']
 
     # Workspace 7
 
