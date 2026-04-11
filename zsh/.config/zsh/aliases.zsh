@@ -6,6 +6,7 @@ alias la="ls -la"
 alias tma="tmux attach"
 alias tmd="tmux detach"
 alias tmls="tmux ls"
+alias tmn='tmux attach -t "$1"'
 
 alias v="nvim"
 alias t="tmux"
