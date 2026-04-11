@@ -19,6 +19,7 @@ brew "powerlevel10k"
 brew "zsh-autosuggestions"
 brew "yazi"
 brew "stylua"
+brew "lazygit"
 
 cask "nikitabobko/tap/aerospace"
 cask "ghostty"
