@@ -7,7 +7,7 @@ ACCENT_COLOR=0xffb8d4b8
 TEXT_COLOR=0xfff5f5f5
 MUTED_COLOR=0x99f5f5f5
 
-sketchybar --bar position=top height=36 color="$BAR_COLOR" blur_radius=0 margin=6 y_offset=4 sticky=on
+sketchybar --bar position=top height=36 color="$BAR_COLOR" blur_radius=0 margin=5 y_offset=1 sticky=on
 
 default=(
   updates=on
@@ -44,7 +44,7 @@ dot=(
   width=18
   icon.padding_left=0
   icon.padding_right=0
-  padding_left=1
+  padding_left=6
   padding_right=1
   background.drawing=off
   click_script=""
