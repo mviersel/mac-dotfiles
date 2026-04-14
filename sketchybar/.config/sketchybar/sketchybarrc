@@ -1,122 +1,132 @@
 PLUGIN_DIR="$CONFIG_DIR/plugins"
 
-##### Bar Appearance #####
-# Configuring the general appearance of the bar.
-# These are only some of the options available. For all options see:
-# https://felixkratz.github.io/SketchyBar/config/bar
-# If you are looking for other colors, see the color picker:
-# https://felixkratz.github.io/SketchyBar/config/tricks#color-picker
+BAR_COLOR=0x00000000
+PILL_COLOR=0x30ffffff
+PILL_COLOR_ACTIVE=0x33b8d4b8
+ACCENT_COLOR=0xffb8d4b8
+TEXT_COLOR=0xfff5f5f5
+MUTED_COLOR=0x99f5f5f5
 
-sketchybar --bar position=top height=38 blur_radius=30 color=0x40000000
-
-##### Changing Defaults #####
-# We now change some default values, which are applied to all further items.
-# For a full list of all available item properties see:
-# https://felixkratz.github.io/SketchyBar/config/items
+sketchybar --bar position=top height=36 color="$BAR_COLOR" blur_radius=0 margin=6 y_offset=4 sticky=on
 
 default=(
-  padding_left=5
-  padding_right=5
-  icon.font="Hack Nerd Font:Bold:16.0"
-  label.font="SF Pro:Semibold:17.0"
-  icon.color=0xffffffff
-  label.color=0xffffffff
-  icon.padding_left=4
-  icon.padding_right=4
-  label.padding_left=4
-  label.padding_right=4
   updates=on
+  icon.font="Hack Nerd Font:Bold:13.0"
+  label.font="SF Pro:Semibold:13.0"
+  icon.color="$ACCENT_COLOR"
+  label.color="$TEXT_COLOR"
+  icon.padding_left=7
+  icon.padding_right=3
+  label.padding_left=0
+  label.padding_right=7
+  padding_left=2
+  padding_right=2
+  background.drawing=off
 )
 sketchybar --default "${default[@]}"
 
-##### Adding aeropsace layouts #####
-# Add the aerospace events we specified in aerospace.toml
+pill=(
+  background.drawing=off
+)
+
+group=(
+  background.color="$PILL_COLOR"
+  background.corner_radius=12
+  background.height=24
+  background.drawing=on
+)
+
+dot=(
+  icon="○"
+  icon.font="SF Pro:Heavy:14.0"
+  icon.color="$MUTED_COLOR"
+  label.drawing=off
+  width=18
+  icon.padding_left=0
+  icon.padding_right=0
+  padding_left=1
+  padding_right=1
+  background.drawing=off
+  click_script=""
+)
+
 sketchybar --add event aerospace_workspace_change
-sketchybar --add event aerospace_monitor_change
+
+workspace_items=()
 
 for sid in $(aerospace list-workspaces --all); do
-  sketchybar --add item space.$sid left \
-    --subscribe space.$sid aerospace_workspace_change \
-    --set space.$sid \
-    display="$(
-      v=$(aerospace list-windows --workspace "$sid" --format "%{monitor-appkit-nsscreen-screens-id}" | cut -c1)
-      echo "${v:-1}"
-    )" \
-    drawing=off \
-    background.color=0x44ffffff \
-    background.corner_radius=5 \
-    background.drawing=on \
-    background.border_color=0xAAFFFFFF \
-    background.border_width=0 \
-    background.height=25 \
-    icon="$sid" \
-    icon.padding_left=10 \
-    icon.shadow.distance=4 \
-    icon.shadow.color=0xA0000000 \
-    label.font="sketchybar-app-font:Regular:16.0" \
-    label.padding_right=20 \
-    label.padding_left=0 \
-    label.y_offset=-1 \
-    label.shadow.drawing=off \
-    label.shadow.color=0xA0000000 \
-    label.shadow.distance=4 \
+  display="$(
+    value=$(aerospace list-windows --workspace "$sid" --format "%{monitor-appkit-nsscreen-screens-id}" | cut -c1)
+    printf '%s' "${value:-1}"
+  )"
+
+  sketchybar --add item space."$sid" left \
+    --subscribe space."$sid" aerospace_workspace_change \
+    --set space."$sid" "${dot[@]}" \
+    display="$display" \
+    update_freq=2 \
     click_script="aerospace workspace $sid" \
-    script="$CONFIG_DIR/plugins/aerospace.sh $sid"
+    script="$PLUGIN_DIR/aerospace.sh $sid"
+
+  workspace_items+=(space."$sid")
 done
 
-# Load Icons on startup
-for mid in $(aerospace list-monitors | cut -c1); do
-  for sid in $(aerospace list-workspaces --monitor $mid --empty no); do
-  apps=$(aerospace list-windows --workspace "$sid" | awk -F'|' '{gsub(/^ *| *$/, "", $2); print $2}')
-
-  sketchybar --set space.$sid drawing=on
-
-  icon_strip=" "
-  if [ "${apps}" != "" ]; then
-    while read -r app; do
-      icon_strip+=" $($CONFIG_DIR/plugins/icon_map_fn.sh "$app")"
-    done <<<"${apps}"
-  else
-    icon_strip=""
-  fi
-  sketchybar --set space.$sid label="$icon_strip"
-  done
-done
-
-# sketchybar --add item space_separator left \
-#   --set space_separator icon="💩" \
-#   icon.padding_left=4 \
-#   label.drawing=off \
-#   background.drawing=off \
-#   script="$PLUGIN_DIR/space_windows.sh" \
-#   --subscribe space_separator aerospace_workspace_change front_app_switched space_windows_change aerospace_monitor_change
-
-# Front app!!
 sketchybar --add item front_app left \
-  --set front_app icon.drawing=off \
+  --set front_app "${pill[@]}" \
+  icon="󰀻" \
+  label.max_chars=24 \
   script="$PLUGIN_DIR/front_app.sh" \
   --subscribe front_app front_app_switched
 
-##### Adding Right Items #####
-# In the same way as the left items we can add items to the right side.
-# Additional position (e.g. center) are available, see:
-# https://felixkratz.github.io/SketchyBar/config/items#adding-items-to-sketchybar
-
-# Some items refresh on a fixed cycle, e.g. the clock runs its script once
-# every 10s. Other gititems respond to events they subscribe to, e.g. the
-# volume.sh script is only executed once an actual change in system audio
-# volume is registered. More info about the event system can be found here:
-# https://felixkratz.github.io/SketchyBar/config/events
-
 sketchybar --add item clock right \
-  --set clock update_freq=10 script="$PLUGIN_DIR/clock.sh" \
-  --add item volume right \
-  --set volume script="$PLUGIN_DIR/volume.sh" \
-  --subscribe volume volume_change \
-  --add item battery right \
-  --set battery update_freq=120 script="$PLUGIN_DIR/battery.sh" \
-  --subscribe battery system_woke power_source_change \
-  --add item swap e \
+  --set clock "${pill[@]}" \
+  icon="󰃭" \
+  update_freq=10 \
+  script="$PLUGIN_DIR/clock.sh"
 
-##### Force all scripts to run the first time (never do this in a script) #####
+sketchybar --add item wifi right \
+  --set wifi "${pill[@]}" \
+  icon="󰤯" \
+  label.drawing=off \
+  click_script='open "x-apple.systempreferences:com.apple.preference.network"' \
+  update_freq=30 \
+  script="$PLUGIN_DIR/wifi.sh"
+
+sketchybar --add item battery right \
+  --set battery "${pill[@]}" \
+  update_freq=120 \
+  script="$PLUGIN_DIR/battery.sh" \
+  --subscribe battery system_woke power_source_change
+
+sketchybar --add item volume right \
+  --set volume "${pill[@]}" \
+  update_freq=5 \
+  script="$PLUGIN_DIR/volume.sh" \
+  --subscribe volume volume_change
+
+sketchybar --add item weather right \
+  --set weather "${pill[@]}" \
+  icon="󰖙" \
+  click_script='open -a Weather' \
+  update_freq=900 \
+  script="$PLUGIN_DIR/weather.sh"
+
+sketchybar --add item ram right \
+  --set ram "${pill[@]}" \
+  icon="󰍛" \
+  update_freq=10 \
+  script="$PLUGIN_DIR/ram.sh"
+
+sketchybar --add item cpu right \
+  --set cpu "${pill[@]}" \
+  icon="󰘚" \
+  update_freq=5 \
+  script="$PLUGIN_DIR/cpu.sh"
+
+sketchybar --add bracket left_group "${workspace_items[@]}" front_app \
+  --set left_group "${group[@]}"
+
+sketchybar --add bracket right_group cpu ram weather volume battery wifi clock \
+  --set right_group "${group[@]}"
+
 sketchybar --update
