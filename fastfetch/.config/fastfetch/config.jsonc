@@ -5,6 +5,13 @@
     "source": "apple",
     "height": 15,
     "width": 15,
+    "color": {
+      "1": "#B7D4B8",
+      "2": "#B7D4B8",
+      "3": "#B7D4B8",
+      "4": "#B7D4B8",
+      "5": "#B7D4B8",
+    },
     "padding": {
       "top": 2,
       "left": 10,
@@ -20,27 +27,27 @@
     {
       "type": "host",
       "key": "󰌢  PC",
-      "keyColor": "green",
+      "keyColor": "#B7D4B8",
     },
     {
       "type": "cpu",
       "key": "│ ├󰻠 ",
-      "keyColor": "green",
+      "keyColor": "#B7D4B8",
     },
     {
       "type": "gpu",
       "key": "│ ├󰍹 ",
-      "keyColor": "green",
+      "keyColor": "#B7D4B8",
     },
     {
       "type": "memory",
       "key": "│ ├󰑭 ",
-      "keyColor": "green",
+      "keyColor": "#B7D4B8",
     },
     {
       "type": "disk",
       "key": "└ └󰋊 ",
-      "keyColor": "green",
+      "keyColor": "#B7D4B8",
     },
     {
       "type": "custom",
@@ -54,53 +61,53 @@
     {
       "type": "os",
       "key": "  OS",
-      "keyColor": "yellow",
+      "keyColor": "#B7D4B8",
     },
     {
       "type": "kernel",
       "key": "│ ├󰌽 ",
-      "keyColor": "yellow",
+      "keyColor": "#B7D4B8",
     },
     {
       "type": "bios",
       "key": "│ ├󰖡 ",
-      "keyColor": "yellow",
+      "keyColor": "#B7D4B8",
     },
     {
       "type": "packages",
       "key": "│ ├󰏗 ",
-      "keyColor": "yellow",
+      "keyColor": "#B7D4B8",
     },
     {
       "type": "shell",
       "key": "└ └󰞷 ",
-      "keyColor": "yellow",
+      "keyColor": "#B7D4B8",
     },
     "break",
     {
       "type": "de",
       "key": "󰧨  DE",
-      "keyColor": "blue",
+      "keyColor": "#B7D4B8",
     },
     {
       "type": "lm",
       "key": "│ ├󰍁 ",
-      "keyColor": "blue",
+      "keyColor": "#B7D4B8",
     },
     {
       "type": "wm",
       "key": "│ ├󱂬 ",
-      "keyColor": "blue",
+      "keyColor": "#B7D4B8",
     },
     {
       "type": "wmtheme",
       "key": "│ ├󰉦 ",
-      "keyColor": "blue",
+      "keyColor": "#B7D4B8",
     },
     {
       "type": "terminal",
       "key": "└ └󰆍 ",
-      "keyColor": "blue",
+      "keyColor": "#B7D4B8",
     },
     {
       "type": "custom",
@@ -114,18 +121,18 @@
     {
       "type": "command",
       "key": "  ›  OS Age  ",
-      "keyColor": "magenta",
+      "keyColor": "#B7D4B8",
       "text": "birth_install=$(stat -c %W /); current=$(date +%s); time_progression=$((current - birth_install)); days_difference=$((time_progression / 86400)); echo $days_difference days",
     },
     {
       "type": "uptime",
       "key": "  ›  Uptime  ",
-      "keyColor": "magenta",
+      "keyColor": "#B7D4B8",
     },
     {
       "type": "datetime",
       "key": "  ›  DateTime  ",
-      "keyColor": "magenta",
+      "keyColor": "#B7D4B8",
     },
     {
       "type": "custom",
