@@ -1,6 +1,8 @@
 tap "nikitabobko/tap"
 tap "TheBoredTeam/boring-notch"
+tap FelixKratz/formulae
 
+brew install borders
 brew "font-sf-pro"
 brew "fastfetch"
 brew "btop"
