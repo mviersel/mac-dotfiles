@@ -2,3 +2,5 @@
 font-family = "FiraCode Nerd Font"
 font-size = 16
 background-opacity = 0.8
+
+keybind = shift+enter=text:\x1b\r
