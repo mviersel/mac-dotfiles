@@ -19,8 +19,8 @@ default=(
   icon.padding_right=3
   label.padding_left=0
   label.padding_right=7
-  padding_left=2
-  padding_right=2
+  padding_left=1
+  padding_right=1
   background.drawing=off
 )
 sketchybar --default "${default[@]}"
