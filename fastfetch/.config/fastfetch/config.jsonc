@@ -3,8 +3,8 @@
   "logo": {
     "type": "small",
     "source": "apple",
-    "height": 15,
-    "width": 15,
+    "height": 5,
+    "width": 8,
     "color": {
       "1": "#B7D4B8",
       "2": "#B7D4B8",
@@ -14,7 +14,7 @@
     },
     "padding": {
       "top": 2,
-      "left": 10,
+      "left": 6,
       "right": 2,
     },
   },
@@ -142,6 +142,11 @@
       "type": "colors",
       "paddingLeft": 2,
       "symbol": "circle",
+    },
+    {
+      "type": "battery",
+      "key": "battery",
+      "keyColor": "#B7D4B8",
     },
     // "break",
     // { "type": "datetime", "key": "Time", "keywidth": 10 }
