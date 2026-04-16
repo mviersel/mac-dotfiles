@@ -9,7 +9,7 @@ config-version = 2
 # Available commands : https://nikitabobko.github.io/AeroSpace/commands
 # Run sketchybar with AeroSpace (optioneel)
 after-startup-command = [
-  'exec-and-forget borders active_color=0xffb8d4b8 inactive_color=0xff494d64 width=5.0'
+  'exec-and-forget borders active_color=0xffb8d4b8 inactive_color=0xff494d64 width=3.0'
 ]
 
 # Notify sketchybar on workspace change
@@ -77,13 +77,13 @@ on-mode-changed = []
 #                 See:
 #                 https://nikitabobko.github.io/AeroSpace/guide#assign-workspaces-to-monitors
 [gaps]
-    inner.horizontal = 8
-    inner.vertical =   8
-    outer.left =       8
-    outer.bottom =     8
+    inner.horizontal = 10
+    inner.vertical =   10
+    outer.left =       20
+    outer.bottom =     10
     # outer.top =        [{monitor.main = 38 }, 14]
-    outer.top =        8
-    outer.right =      8
+    outer.top =        10
+    outer.right =      20
 
 # 'main' binding mode declaration
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
@@ -107,7 +107,7 @@ on-mode-changed = []
 
 
 [mode.main.binding]
-    alt-enter = 'exec-and-forget open -a /Applications/Ghostty.app/'
+    alt-enter = 'exec-and-forget open -a /Applications/kitty.app/'
 
     # All possible keys:
     # - Letters.        a, b, c, ..., z
