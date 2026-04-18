@@ -1,6 +1,42 @@
 # onthoudt bij veranderingen cmd+ctrl+,
 font-family = "FiraCode Nerd Font"
 font-size = 16
-background-opacity = 0.8
+
+# Clean soft-dark look with a little translucency.
+background = #110F08
+foreground = #d7dce2
+background-opacity = 0.86
+background-blur = 20
+background-opacity-cells = true
+
+window-padding-x = 12
+window-padding-y = 10
+
+cursor-style = block
+cursor-color = #c7d0db
+cursor-text = #11131a
+cursor-opacity = 0.9
+
+selection-background = #2a3442
+selection-foreground = #e8edf3
+split-divider-color = #232c38
+unfocused-split-fill = #0d1016
+
+palette = 0=#1b1f27
+palette = 1=#e06c75
+palette = 2=#98c379
+palette = 3=#e5c07b
+palette = 4=#7fb4ca
+palette = 5=#c678dd
+palette = 6=#7cc6bf
+palette = 7=#cfd6dd
+palette = 8=#4b5563
+palette = 9=#f07f88
+palette = 10=#a9d189
+palette = 11=#f0cf8f
+palette = 12=#93c6dc
+palette = 13=#d58ae9
+palette = 14=#90d8d1
+palette = 15=#e8edf3
 
 keybind = shift+enter=text:\x1b\r
