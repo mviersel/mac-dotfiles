@@ -29,7 +29,7 @@ alias obidian="NVIM_APPNAME=obidian nvim"
 alias nvif='nvim $(fzf)'
 
 function nvims() {
-  items=("default", "obidian")
+  items=("default", "nvik")
   config=$(printf "%s\n" "${items[@]}" | fzf --prompt=" Neovim Config  " --height=~50% --layout=reverse --border --exit-0)
   if [[ -z $config ]]; then
     echo "Nothing selected"
