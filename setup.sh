@@ -84,4 +84,6 @@ else
     echo "-> geen macos map gevonden"
 fi
 
+killall cfprefsd 2>/dev/null || true
+
 log "Setup voltooid"
