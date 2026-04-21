@@ -10,3 +10,6 @@ vim.opt.shiftwidth = 4
 vim.opt.tabstop = 4
 vim.opt.ignorecase = true
 vim.opt.clipboard = "unnamedplus"
+
+vim.opt.spell = true
+vim.opt.spelllang = { "en", "nl" }
