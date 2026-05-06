@@ -23,7 +23,7 @@ export PATH="$PATH:/Users/m98446/.lmstudio/bin"
 # End of LM Studio CLI section
 export PATH="$PATH:/opt/homebrew/bin/ffmpeg"
 export PATH="$PATH:~/Library/Python/3.x/bin"
-
+export PATH="$HOME/.cargo/bin:$PATH"
 
 alias obidian="NVIM_APPNAME=obidian nvim"
 alias nvif='nvim $(fzf)'
