@@ -220,6 +220,10 @@ on-mode-changed = []
     if.app-id = 'com.apple.finder'
     run = ['layout floating']
 
+    [[on-window-detected]]
+    if.app-id = 'com.apple.ActivityMonitor'
+    run = ['layout floating']
+
     # [[on-window-detected]]
     # if.app-id = 'net.whatsapp.WhatsApp'
     # run = ['layout floating']
@@ -259,9 +263,6 @@ on-mode-changed = []
     if.app-id = 'app.zen-browser.zen'
     run = ['move-node-to-workspace 2']
 
-    [[on-window-detected]]
-    if.app-id = 'net.imput.helium'
-    run = ['move-node-to-workspace 2']
 
     # Workspace 3
 
@@ -278,6 +279,10 @@ on-mode-changed = []
     # Workspace 5
 
     # Workspace 6
+
+    [[on-window-detected]]
+    if.app-id = 'net.imput.helium'
+    run = ['move-node-to-workspace 6']
 
     [[on-window-detected]]
     if.app-id = 'com.brave.Browser'
