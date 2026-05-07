@@ -28,8 +28,10 @@ export PATH="$HOME/.cargo/bin:$PATH"
 alias obidian="NVIM_APPNAME=obidian nvim"
 alias nvif='nvim $(fzf)'
 
+alias npak="NVIM_APPNAME=npak nvim"
+
 function nvims() {
-  items=("default", "nvik")
+  items=("default", "nvik", "npak")
   config=$(printf "%s\n" "${items[@]}" | fzf --prompt=" Neovim Config  " --height=~50% --layout=reverse --border --exit-0)
   if [[ -z $config ]]; then
     echo "Nothing selected"
@@ -42,8 +44,8 @@ function nvims() {
 
 function cl() {
 	clear
+    echo "(y)=Yazi (t)=Tmux (v)=nVim"
 	fastfetch
-  echo "(y)=Yazi (t)=Tmux (v)=nVim"
 }
 
 function brundle() {
