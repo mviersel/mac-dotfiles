@@ -4,7 +4,7 @@
 # if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
 #   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 # fi
-set -o vi
+# set -o vi
 
 export EDITOR=nvim
 export VISUAL=nvim
@@ -29,6 +29,7 @@ alias obidian="NVIM_APPNAME=obidian nvim"
 alias nvif='nvim $(fzf)'
 
 alias npak="NVIM_APPNAME=npak nvim"
+alias nvip="NVIM_APPNAME=nvip nvim"
 
 function nvims() {
   items=("default", "nvik", "npak")
