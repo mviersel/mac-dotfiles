@@ -21,6 +21,7 @@ brew "zsh-autosuggestions"
 brew "yazi"
 brew "stylua"
 brew "lazygit"
+brew "sevenzip"
 
 cask "font-fira-code-nerd-font"
 cask "font-symbols-only-nerd-font"
