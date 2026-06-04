@@ -153,7 +153,7 @@ on-mode-changed = []
     alt-l = 'focus right --boundaries all-monitors-outer-frame'
 
     # Change the order how windows are opened
-    alt-tab = 'layout horizontal vertical'
+    # alt-tab = 'layout horizontal vertical'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#move
     alt-shift-h = 'move left'
