@@ -13,5 +13,6 @@ write() {
 }
 
 tmx() {
-  "$HOME/tmux-templates/std.sh"
+  local template="$1"
+  "$HOME/tmux-templates/$template.sh"
 }
