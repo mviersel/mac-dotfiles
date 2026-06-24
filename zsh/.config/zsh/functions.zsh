@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 # yazi function
 function y() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
@@ -9,4 +10,8 @@ function y() {
 
 write() {
     figlet "$*"
+}
+
+tmx() {
+  "$HOME/tmux-templates/std.sh"
 }
