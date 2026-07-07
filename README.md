@@ -76,7 +76,8 @@ brew bundle --file .dotfiles/brewfile
   - Zen mods
 - [transparent zen](https://zen-browser.app/mods/642854b5-88b4-4c40-b256-e035532109df/?q=trans)
   - scripts
-- [Greasy fork](https://greasyfork.org/id/scripts/443277-bypass-pahe-links)
+- [bypass pahe](https://greasyfork.org/id/scripts/443277-bypass-pahe-links)
+- [bypass shortlinks](https://codeberg.org/Amm0ni4/bypass-all-shortlinks-debloated)
 
 </details>
 
@@ -92,5 +93,7 @@ brew bundle --file .dotfiles/brewfile
 - [youtube windowed fullscreen](https://chromewebstore.google.com/detail/youtube-windowed-fullscre/gkkmiofalnjagdcjheckamobghglpdpm)
 - [Raindrop](https://chromewebstore.google.com/detail/raindropio/ldgfbffkinooeloadekpmfoklnobpien)
 - [Tampermonkey](https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en)
+- [zen internet](https://chromewebstore.google.com/detail/zen-internet/dpkamhkboipomecencjpammmjdfkgjha?pli=1)
+- [ghostery](https://chromewebstore.google.com/detail/ghostery-adblocker-for-pr/mlomiejdfkolichcflejclcbmpeaniij)
 
 </details>
