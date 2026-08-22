@@ -26,6 +26,7 @@ brew "lazygit"
 brew "sevenzip"
 brew "pnpm"
 brew "spotatui"
+brew "herdr"
 
 cask "font-fira-code-nerd-font"
 cask "font-symbols-only-nerd-font"
