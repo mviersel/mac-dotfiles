@@ -1,0 +1,77 @@
+# Taps, necessary for adding packages
+tap "LargeModGames/spotatui"
+
+# Essential packages
+cask "font-fira-code-nerd-font"
+cask "font-symbols-only-nerd-font"
+brew "font-sf-pro"
+brew "fastfetch"
+brew "btop"
+brew "cmatrix"
+brew "tmux"
+brew "fzf"
+brew "git"
+brew "neovim"
+brew "stow"
+brew "tree"
+brew "pipx"
+brew "yt-dlp"
+brew "ffmpeg"
+brew "powerlevel10k"
+brew "zsh-autosuggestions"
+brew "yazi"
+brew "stylua"
+brew "lazygit"
+brew "sevenzip"
+brew "pnpm"
+brew "spotatui"
+cask "Karabiner-Elements"
+cask "sf-symbols"
+
+# Optional packages that make life easier
+cask "openlogi"
+
+cask "nikitabobko/tap/aerospace"
+
+cask "vicinae"
+
+brew "herdr"
+
+cask "ghostty"
+cask "kitty"
+
+cask "helium-browser"
+cask "zen"
+
+cask "obsidian"
+
+cask "whatsapp"
+
+cask "miro"
+
+cask "figma"
+
+cask "lunar"
+
+cask "displaylink"
+
+cask "bambu-studio"
+
+cask "unnaturalscrollwheels"
+
+cask "microsoft-teams"
+cask "microsoft-outlook"
+cask "microsoft-word"
+
+cask "boring-notch"
+
+cask "vlc"
+cask "iina"
+
+cask "pearcleaner"
+
+cask "latest"
+
+cask "jordanbaird-ice"
+
+cask "vorssaint"
