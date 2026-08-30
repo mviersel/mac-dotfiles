@@ -33,6 +33,8 @@ cask "openlogi"
 
 cask "nikitabobko/tap/aerospace"
 
+caks "spotify"
+
 cask "vicinae"
 
 brew "herdr"
