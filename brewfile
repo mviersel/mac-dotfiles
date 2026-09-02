@@ -54,6 +54,7 @@ cask "miro"
 cask "figma"
 
 cask "lunar"
+cask "monitorcontrol"
 
 cask "displaylink"
 
