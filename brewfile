@@ -4,7 +4,6 @@ tap "LargeModGames/spotatui"
 # Essential packages
 cask "font-fira-code-nerd-font"
 cask "font-symbols-only-nerd-font"
-brew "font-sf-pro"
 brew "fastfetch"
 brew "btop"
 brew "cmatrix"
@@ -33,7 +32,7 @@ cask "openlogi"
 
 cask "nikitabobko/tap/aerospace"
 
-caks "spotify"
+cask "spotify"
 
 cask "vicinae"
 
@@ -65,8 +64,6 @@ cask "unnaturalscrollwheels"
 cask "microsoft-teams"
 cask "microsoft-outlook"
 cask "microsoft-word"
-
-cask "boring-notch"
 
 cask "vlc"
 cask "iina"
