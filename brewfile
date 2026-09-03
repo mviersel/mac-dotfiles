@@ -28,6 +28,8 @@ cask "Karabiner-Elements"
 cask "sf-symbols"
 
 # Optional packages that make life easier
+cask "hyperkey"
+
 cask "openlogi"
 
 cask "nikitabobko/tap/aerospace"
@@ -72,6 +74,4 @@ cask "pearcleaner"
 
 cask "latest"
 
-cask "jordanbaird-ice"
-
-cask "vorssaint"
+cask "hiddenbar"
