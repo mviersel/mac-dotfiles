@@ -84,8 +84,8 @@ on-mode-changed = []
     outer.left =       20
     outer.bottom =     10
     # outer.top =        [{monitor.main = 38 }, 14]
-    outer.top = [{ monitor.'built-in' = 10 }, 38]
-    # outer.top =        10
+    # outer.top = [{ monitor.'built-in' = 10 }, 38]
+    outer.top =        10
     outer.right =      20
 
 # 'main' binding mode declaration
@@ -282,22 +282,22 @@ on-mode-changed = []
     # Workspace 6
 
     [[on-window-detected]]
-    if.app-id = 'app.zen-browser.zen'
-    run = ['move-node-to-workspace 6']
-
-    [[on-window-detected]]
-    if.app-id = 'com.brave.Browser'
-    run = ['move-node-to-workspace 6']
-
-    # Workspace 7
-
-    [[on-window-detected]]
     if.app-id = 'net.whatsapp.WhatsApp'
     run = ['move-node-to-workspace 7']
 
     [[on-window-detected]]
     if.app-id = 'com.BASCOM-CLIENT'
     run = ['move-node-to-workspace 7']
+
+    # Workspace 7
+
+    [[on-window-detected]]
+    if.app-id = 'app.zen-browser.zen'
+    run = ['move-node-to-workspace 6']
+
+    [[on-window-detected]]
+    if.app-id = 'com.brave.Browser'
+    run = ['move-node-to-workspace 6']
 
     # Workspace 8
 
