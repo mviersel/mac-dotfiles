@@ -1,0 +1,6 @@
+[2m2026-09-04T12:31:38.271150Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Accessibility permissions are not granted. In System Preferences, go to Privacy & Security > Accessibility and enable GlazeWM.
+[2m2026-09-04T12:31:48.311549Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Accessibility permissions are not granted. In System Preferences, go to Privacy & Security > Accessibility and enable GlazeWM.
+[2m2026-09-04T12:31:56.317067Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Failed to stop event loop gracefully: timed out waiting on channel
+[2m2026-09-04T12:43:42.498790Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m could not find expected ':' at line 126 column 3, while scanning a simple key at line 125 column 5
+[2m2026-09-04T12:43:47.627120Z[0m [31mERROR[0m [2mwm_platform::dispatcher[0m[2m:[0m Failed to send closure result.
+[2m2026-09-04T13:02:36.182890Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Shell exec failed for 'cmd'. Make sure the program exists and is accessible from your shell. Error: No such file or directory (os error 2)
