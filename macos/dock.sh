@@ -2,10 +2,10 @@
 set -euo pipefail
 
 add_dock_app() {
-  local app_path="$1"
+    local app_path="$1"
 
-  defaults write com.apple.dock persistent-apps -array-add \
-    "<dict>
+    defaults write com.apple.dock persistent-apps -array-add \
+        "<dict>
       <key>tile-data</key>
       <dict>
         <key>file-data</key>
@@ -29,11 +29,13 @@ defaults write com.apple.dock orientation -string right
 defaults write com.apple.dock persistent-apps -array
 defaults write com.apple.dock persistent-others -array
 
+defaults write com.apple.dock workspaces-auto-swoosh -bool NO
+
 add_dock_app "/System/Applications/Apps.app"
 
 # Alleen toevoegen als Launchpad nog bestaat op deze macOS-versie
 if [[ -d "/System/Applications/Launchpad.app" ]]; then
-  add_dock_app "/System/Applications/Launchpad.app"
+    add_dock_app "/System/Applications/Launchpad.app"
 fi
 
 add_dock_app "/Applications/Zen.app"
