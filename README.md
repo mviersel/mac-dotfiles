@@ -1,5 +1,15 @@
 # mac-dotfiles
-Dotfiles for my **Mac** machines 
+Dotfiles for my **Mac** machines
+
+
+## Repo setup
+
+This repo has a few main folders.
+
+1. **/macos** which houses all the scripts to set my system settings right.
+2. The configs files presentes by each programs name followed by their path. Using Stow all the configs are put in their right place on the new machine.
+
+## Using the dotfiles repo
 
 Download the repo into the home directory, cd into it and run the `setup.sh`.
 ```bash
@@ -7,58 +17,30 @@ cd mac-dotfiles
 ./setup.sh
 ```
 
-Install [homebrew](https://brew.sh/):
-```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+Make a SSH key, copy the content to clipboard and add it to [github](github.com) or [gitlab](gitlab.com)
+```
+ssh-keygen
+cat ~/.ssh/id_ed25519.pub | pbcopy
 ```
 
-This repo has two main folders. 
-
-**brewfiles** holds the list of programs used to quickly install using homebrew.
-```bash
-cd ~/mac-dotfiles/brewfiles
-brew bundle install --file brewfile
+At last make the ssh key reachable by the machine by encrypting it and adding it to the keychain
+```
+chmod 700 ~/.ssh
+chmod 600 ~/.ssh/config
+ssh-add --apple-use-keychain ~/.ssh/id_ed25519
+ssh -T git@github.com
 ```
 
-**stow** Which holds all the config files. It can be used with the following command:
-```bash
-cd ~/mac-dotfiles/stow
-stow .
+To connect the downloaded folder to the right repo you have to make sure the folder is located in the home `~/` directory. Then connect to the repo using ssh:
+```
+cd ~/mac-dotfiles
+
+git init
+git remote add origin git@github.com:mviersel/mac-dotfiles.git
+git fetch origin
 ```
 
-```
-├── aerospace
-│   ├── aerospace.toml
-│   └── chat-aerospace.toml
-├── brewfiles
-│   └── brewfile
-├── kitty
-│   └── kitty.conf
-├── nvim
-│   ├── init.lua
-│   └── lua
-│       ├── colorscheme.lua
-│       ├── markdown.lua
-│       ├── obsidian.lua
-│       └── plugins
-├── raycast
-├── README.md
-├── scripts
-│   └── install.sh
-├── tmux
-│   └── tmux.conf
-├── vscode
-│   ├── keybindings.json
-│   └── settings.json
-└── zshrc
-```
-
-## brewfiles
-To install all the programs from the brew file:
-
-```bash
-brew bundle --file .dotfiles/brewfile
-```
+## Brower plugins an scripts
 
 <details>
   <summary>Firefox extensions and tweaks</summary>
