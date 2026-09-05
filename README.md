@@ -1,6 +1,7 @@
 # mac-dotfiles
 Dotfiles for my **Mac** machines
 
+![desktop preview](./readme/Screenshot-preview.png)
 
 ## Repo setup
 
