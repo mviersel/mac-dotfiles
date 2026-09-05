@@ -239,14 +239,6 @@ on-mode-changed = []
 
     # Workspace 1 -- working
 
-    # [[on-window-detected]]
-    # if.app-id = 'com.mitchellh.ghostty'
-    # run = ['move-node-to-workspace 1']
-    #
-    # [[on-window-detected]]
-    # if.app-id = 'net.kovidgoyal.kitty'
-    # run = ['move-node-to-workspace 1']
-
     [[on-window-detected]]
     if.app-id = 'com.figma.Desktop'
     run = ['move-node-to-workspace 1']
@@ -283,21 +275,21 @@ on-mode-changed = []
 
     [[on-window-detected]]
     if.app-id = 'net.whatsapp.WhatsApp'
-    run = ['move-node-to-workspace 7']
+    run = ['move-node-to-workspace 6']
 
     [[on-window-detected]]
     if.app-id = 'com.BASCOM-CLIENT'
-    run = ['move-node-to-workspace 7']
+    run = ['move-node-to-workspace 6']
 
     # Workspace 7
 
     [[on-window-detected]]
     if.app-id = 'app.zen-browser.zen'
-    run = ['move-node-to-workspace 6']
+    run = ['move-node-to-workspace 7']
 
     [[on-window-detected]]
     if.app-id = 'com.brave.Browser'
-    run = ['move-node-to-workspace 6']
+    run = ['move-node-to-workspace 7']
 
     # Workspace 8
 
@@ -306,6 +298,14 @@ on-mode-changed = []
     run = ['move-node-to-workspace 8']
 
     # Workspace 9
+
+    [[on-window-detected]]
+    if.app-id = 'com.mitchellh.ghostty'
+    run = ['move-node-to-workspace 1']
+
+    [[on-window-detected]]
+    if.app-id = 'net.kovidgoyal.kitty'
+    run = ['move-node-to-workspace 1']
 
     [[on-window-detected]]
     if.app-id = 'com.spotify.client'
