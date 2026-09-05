@@ -45,18 +45,14 @@ function stowr() {
   stow -v -t "$HOME"
 }
 
-function border-start() {
-    brew services start felixkratz/formulae/borders
+function mkcd() {
+  mkdir -p "$1" && cd "$1"
 }
 
-
-function border-stop() {
-    brew services stop felixkratz/formulae/borders
-}
-
+# maakt het snel wisselen van nvim's mogelijk
 bindkey -s ^a "nvims\n"
-# source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
 
+# source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
@@ -79,7 +75,7 @@ if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
     tmux new-session -d -s notes -c "$HOME/obidian" nvim home.md
 
   tmux has-session -t dotfiles 2>/dev/null ||
-    tmux new-session -d -s dotfiles -c "$HOME/linux-dotfiles"
+    tmux new-session -d -s dotfiles -c "$HOME/mac-dotfiles"
 
   tmux has-session -t opencode 2>/dev/null ||
     tmux new-session -d -s opencode -c "$HOME"
@@ -90,6 +86,8 @@ if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
   tmux attach-session -t home
 fi
 
+# zet keybinds in terminal terug naar emacs variant. NA ALLE VIM FUNCTIONS LATEN STAAN
+bindkey -e
 
 echo "(y)=Yazi (t)=Tmux (v)=nVim"
 fastfetch

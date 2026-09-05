@@ -10,15 +10,14 @@ alias tmls="tmux ls"
 alias lg="lazygit"
 
 alias v="nvim"
-alias t="tmux"
+alias tm="tmux"
 
-alias treload="tmux source-file ~/.tmux.conf"
-
-mkcd() {
-  mkdir -p "$1" && cd "$1"
-}
+alias tmreload="tmux source-file ~/.tmux.conf"
 
 alias bar-start="brew services start sketchybar"
 alias bar-stop="brew services stop sketchybar"
 alias bar-restart="brew services restart sketchybar"
 alias bar-reload="sketchybar --reload"
+
+alias border-start="brew services start felixkratz/formulae/borders"
+alias border-stop="brew services stop felixkratz/formulae/borders"
