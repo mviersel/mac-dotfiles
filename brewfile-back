@@ -30,6 +30,7 @@ brew "herdr"
 
 cask "font-fira-code-nerd-font"
 cask "font-symbols-only-nerd-font"
+cask "font-hack-nerd-Font"
 cask "nikitabobko/tap/aerospace"
 cask "ghostty"
 cask "kitty"
