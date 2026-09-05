@@ -75,9 +75,7 @@ brew bundle --file .dotfiles/brewfile
 - [Tampermonkey](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/)
   - Zen mods
 - [transparent zen](https://zen-browser.app/mods/642854b5-88b4-4c40-b256-e035532109df/?q=trans)
-  - scripts
-- [bypass pahe](https://greasyfork.org/id/scripts/443277-bypass-pahe-links)
-- [bypass shortlinks](https://codeberg.org/Amm0ni4/bypass-all-shortlinks-debloated)
+- [Ghost tabs](https://zen-browser.app/mods/c01d3e22-1cee-45c1-a25e-53c0f180eea8/?page=3)
 
 </details>
 
@@ -95,5 +93,14 @@ brew bundle --file .dotfiles/brewfile
 - [Tampermonkey](https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en)
 - [zen internet](https://chromewebstore.google.com/detail/zen-internet/dpkamhkboipomecencjpammmjdfkgjha?pli=1)
 - [ghostery](https://chromewebstore.google.com/detail/ghostery-adblocker-for-pr/mlomiejdfkolichcflejclcbmpeaniij)
+
+</details>
+
+<details>
+  <summary>Scripts recommended</summary>
+
+  - scripts
+- [bypass pahe](https://greasyfork.org/id/scripts/443277-bypass-pahe-links)
+- [bypass shortlinks](https://codeberg.org/Amm0ni4/bypass-all-shortlinks-debloated)
 
 </details>
