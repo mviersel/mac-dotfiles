@@ -27,6 +27,8 @@ start-at-login = true
 # Normalizations. See: https://nikitabobko.github.io/AeroSpace/guide#normalization
 enable-normalization-flatten-containers = true
 enable-normalization-opposite-orientation-for-nested-containers = true
+    # Let op dit, deze settings is alleen voor de bsp fork. zie: brew install --cask pszypowicz/tap/aerospace-bsp
+enable-normalization-bsp-shape = true
 
 # See: https://nikitabobko.github.io/AeroSpace/guide#layouts
 # The 'accordion-padding' specifies the size of accordion padding
@@ -219,11 +221,16 @@ on-mode-changed = []
 
     # to find app.id: osascript -e 'id of app "whatsapp"' or aerospace list-apps
     [[on-window-detected]]
-    if.app-id = 'com.apple.finder'
+    if.app-id = 'com.apple.ActivityMonitor'
+    run = ['layout floating']
+
+
+    [[on-window-detected]]
+    if.app-id = 'com.electron.realtimeboard'
     run = ['layout floating']
 
     [[on-window-detected]]
-    if.app-id = 'com.apple.ActivityMonitor'
+    if.app-id = 'com.apple.finder'
     run = ['layout floating']
 
     # [[on-window-detected]]
@@ -301,7 +308,7 @@ on-mode-changed = []
 
     [[on-window-detected]]
     if.app-id = 'com.mitchellh.ghostty'
-    run = ['move-node-to-workspace 1']
+    run = ['move-node-to-workspace 9']
 
     [[on-window-detected]]
     if.app-id = 'net.kovidgoyal.kitty'
