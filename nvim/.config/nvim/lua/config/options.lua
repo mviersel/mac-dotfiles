@@ -3,7 +3,7 @@
 -- Add any additional options here
 vim.opt.number = true
 vim.opt.wrap = true
-vim.opt.scrolloff = 5
+vim.opt.scrolloff = 10
 vim.opt.relativenumber = true
 vim.opt.expandtab = true
 vim.opt.shiftwidth = 4
