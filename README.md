@@ -41,6 +41,9 @@ git remote add origin git@github.com:mviersel/mac-dotfiles.git
 git fetch origin
 ```
 
+## Manually labor required
+- Miro is an Electron app that really hates window managers. To work around the problem you have to manually turn of hardware acceleration: Menubar help > hardware acceleration
+
 ## Brower plugins an scripts
 
 <details>
