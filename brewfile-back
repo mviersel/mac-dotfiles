@@ -3,6 +3,7 @@ tap "TheBoredTeam/boring-notch"
 tap "FelixKratz/formulae"
 tap "zennotes/tap/zennotes"
 tap "LargeModGames/spotatui"
+tap "nicojan/tap/chorus"
 
 brew "borders"
 brew "font-sf-pro"
