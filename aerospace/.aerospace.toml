@@ -292,6 +292,10 @@ on-mode-changed = []
     run = ['move-node-to-workspace 6']
 
     [[on-window-detected]]
+    if.app-id = 'com.nicojan.Chorus'
+    run = ['move-node-to-workspace 6']
+
+    [[on-window-detected]]
     if.app-id = 'com.BASCOM-CLIENT'
     run = ['move-node-to-workspace 6']
 
