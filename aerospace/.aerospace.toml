@@ -107,6 +107,7 @@ on-mode-changed = []
     7 = 'secondary'
     8 = 'secondary'
     9 = 'secondary'
+    10 = 'secondary'
 
 
 
@@ -177,6 +178,7 @@ on-mode-changed = []
     alt-7 = 'workspace 7'
     alt-8 = 'workspace 8'
     alt-9 = 'workspace 9'
+    alt-0 = 'workspace 10'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
     alt-shift-1 = 'move-node-to-workspace 1'
@@ -188,6 +190,7 @@ on-mode-changed = []
     alt-shift-7 = 'move-node-to-workspace 7'
     alt-shift-8 = 'move-node-to-workspace 8'
     alt-shift-9 = 'move-node-to-workspace 9'
+    alt-shift-0 = 'move-node-to-workspace 10'
 
     alt-shift-comma = 'move-node-to-monitor --wrap-around --focus-follows-window prev'
     alt-shift-period = 'move-node-to-monitor --wrap-around --focus-follows-window next'
@@ -231,6 +234,10 @@ on-mode-changed = []
 
     [[on-window-detected]]
     if.app-id = 'com.apple.finder'
+    run = ['layout floating']
+
+    [[on-window-detected]]
+    if.app-id = 'org.openlogi.openlogi'
     run = ['layout floating']
 
     # [[on-window-detected]]
@@ -298,22 +305,25 @@ on-mode-changed = []
     if.app-id = 'com.brave.Browser'
     run = ['move-node-to-workspace 7']
 
-    # Workspace 8
+    # Workspace 8 (free)
 
-    [[on-window-detected]]
-    if.app-id = 'md.obsidian'
-    run = ['move-node-to-workspace 8']
 
     # Workspace 9
 
     [[on-window-detected]]
-    if.app-id = 'com.mitchellh.ghostty'
+    if.app-id = 'md.obsidian'
     run = ['move-node-to-workspace 9']
+
+    # Workspace 10 
+
+    [[on-window-detected]]
+    if.app-id = 'com.mitchellh.ghostty'
+    run = ['move-node-to-workspace 10']
 
     [[on-window-detected]]
     if.app-id = 'net.kovidgoyal.kitty'
-    run = ['move-node-to-workspace 1']
+    run = ['move-node-to-workspace 10']
 
     [[on-window-detected]]
     if.app-id = 'com.spotify.client'
-    run = ['move-node-to-workspace 9']
+    run = ['move-node-to-workspace 10']
