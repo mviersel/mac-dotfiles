@@ -15,6 +15,7 @@ PACKAGES=(
     tmux
     zsh
     backgrounds
+    karabiner
 )
 
 log() {

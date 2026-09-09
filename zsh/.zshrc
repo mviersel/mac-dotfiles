@@ -12,6 +12,8 @@ source ~/.config/zsh/ytdlp.zsh
 source ~/.config/zsh/git.sh
 
 export PATH="$PATH:/opt/homebrew/bin/ffmpeg"
+export PATH="/Applications/MacPorts/Emacs.app/Contents/MacOS:$PATH"
+export PATH="$HOME/.config/emacs/bin:$PATH"
 
 alias obidian="NVIM_APPNAME=obidian nvim"
 alias nvif='nvim $(fzf)'
