@@ -113,7 +113,7 @@ on-mode-changed = []
 
 
 [mode.main.binding]
-    alt-enter = 'exec-and-forget open -a /Applications/Ghostty.app'
+    alt-enter = 'exec-and-forget open -a /Applications/kitty.app/'
 
     # All possible keys:
     # - Letters.        a, b, c, ..., z
@@ -282,22 +282,14 @@ on-mode-changed = []
     run = ['move-node-to-workspace 3']
 
     # Workspace 4
+    [[on-window-detected]]
+    if.app-id = 'md.obsidian'
+    run = ['move-node-to-workspace 4']
 
     # Workspace 5
 
     # Workspace 6
 
-    [[on-window-detected]]
-    if.app-id = 'net.whatsapp.WhatsApp'
-    run = ['move-node-to-workspace 6']
-
-    [[on-window-detected]]
-    if.app-id = 'com.nicojan.Chorus'
-    run = ['move-node-to-workspace 6']
-
-    [[on-window-detected]]
-    if.app-id = 'com.BASCOM-CLIENT'
-    run = ['move-node-to-workspace 6']
 
     # Workspace 7
 
@@ -309,14 +301,23 @@ on-mode-changed = []
     if.app-id = 'com.brave.Browser'
     run = ['move-node-to-workspace 7']
 
-    # Workspace 8 (free)
-
-
-    # Workspace 9
 
     [[on-window-detected]]
-    if.app-id = 'md.obsidian'
-    run = ['move-node-to-workspace 9']
+    if.app-id = 'com.BASCOM-CLIENT'
+    run = ['move-node-to-workspace 7']
+
+    # Workspace 8 
+
+    [[on-window-detected]]
+    if.app-id = 'net.whatsapp.WhatsApp'
+    run = ['move-node-to-workspace 8']
+
+    [[on-window-detected]]
+    if.app-id = 'com.nicojan.Chorus'
+    run = ['move-node-to-workspace 8']
+
+    # Workspace 9 (free)
+
 
     # Workspace 10 
 
