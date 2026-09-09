@@ -113,7 +113,7 @@ on-mode-changed = []
 
 
 [mode.main.binding]
-    alt-enter = 'exec-and-forget open -a /Applications/kitty.app/'
+    alt-enter = 'exec-and-forget open -a /Applications/Ghostty.app/'
 
     # All possible keys:
     # - Letters.        a, b, c, ..., z
