@@ -40,3 +40,4 @@ palette = 14=#90d8d1
 palette = 15=#e8edf3
 
 keybind = shift+enter=text:\x1b\r
+confirm-close-surface = false
