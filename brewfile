@@ -1,76 +1,101 @@
 # Taps, necessary for adding packages
 tap "LargeModGames/spotatui"
+tap "nikitabobko/tap"
+tap "TheBoredTeam/boring-notch"
+tap "FelixKratz/formulae"
+tap "zennotes/tap/zennotes"
+tap "nicojan/tap/chorus"
 
 # Essential packages
-cask "font-fira-code-nerd-font"
-cask "font-symbols-only-nerd-font"
-brew "fastfetch"
 brew "btop"
 brew "cmatrix"
-brew "tmux"
+brew "fastfetch"
+brew "ffmpeg"
 brew "fzf"
 brew "git"
-brew "neovim"
-brew "stow"
-brew "tree"
-brew "pipx"
-brew "yt-dlp"
-brew "ffmpeg"
-brew "powerlevel10k"
-brew "zsh-autosuggestions"
-brew "yazi"
-brew "stylua"
 brew "lazygit"
-brew "sevenzip"
+brew "neovim"
+brew "pipx"
 brew "pnpm"
+brew "powerlevel10k"
+brew "python"
+brew "sevenzip"
 brew "spotatui"
-cask "Karabiner-Elements"
+brew "stow"
+brew "stylua"
+brew "tmux"
+brew "tree"
+brew "yazi"
+brew "yt-dlp"
+brew "zsh-autosuggestions"
+
+# Fonts
+cask "font-fira-code-nerd-font"
+cask "font-hack-nerd-Font"
+cask "font-sf-pro"
+cask "font-symbols-only-nerd-font"
 cask "sf-symbols"
 
 # Optional packages that make life easier
-cask "openlogi"
 
-cask "nikitabobko/tap/aerospace"
+    #Mouse
+    cask "openlogi"
+    cask "unnaturalscrollwheels"
 
-cask "spotify"
+    # Window managers
+    brew "borders"
+    cask "glzr-io/tap/glazewm"
+    cask "glzr-io/tap/zebar"
+    cask "nikitabobko/tap/aerospace"
 
-cask "vicinae"
+    # microsoft BS
+    cask "microsoft-outlook"
+    cask "microsoft-teams"
+    cask "microsoft-word"
 
-brew "herdr"
+    # Launchers
+    cask "raycast"
+    cask "vicinae"
 
-cask "ghostty"
-cask "kitty"
+    # Music
+    cask "spotify"
 
-cask "helium-browser"
-cask "zen"
+    # Video
+    cask "vlc"
+    cask "iina"
 
-cask "obsidian"
+    # IDE
+    cask "visual-studio-code"
 
-cask "whatsapp"
+    # Terminals
+    brew "herdr"
+    cask "ghostty"
+    cask "kitty"
 
-cask "miro"
+    # Browsers
+    cask "helium-browser"
+    cask "zen"
 
-cask "figma"
+    # Notes
+    cask "zennotes"
+    cask "obsidian"
 
-cask "lunar"
-cask "monitorcontrol"
+    # Monitor
+    cask "lunar"
+    cask "monitorcontrol"
+    cask "displaylink"
 
-cask "displaylink"
+    # Utilties
+    cask "bambu-studio"
+    cask "Karabiner-Elements"
+    cask "latest"
+    cask "pearcleaner"
+    cask "whatsapp"
+    cask "miro"
+    cask "figma"
 
-cask "bambu-studio"
+    # Menubar
+    cask "hiddenbar"
+    cask "jordanbaird-ice"
+    cask "thaw"
 
-cask "unnaturalscrollwheels"
-
-cask "microsoft-teams"
-cask "microsoft-outlook"
-cask "microsoft-word"
-
-cask "vlc"
-cask "iina"
-
-cask "pearcleaner"
-
-cask "latest"
-
-cask "hiddenbar"
-cask "thaw"
