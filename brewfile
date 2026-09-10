@@ -1,10 +1,11 @@
 # Taps, necessary for adding packages
-tap "LargeModGames/spotatui"
-tap "nikitabobko/tap"
-tap "TheBoredTeam/boring-notch"
-tap "FelixKratz/formulae"
-tap "zennotes/tap/zennotes"
-tap "nicojan/tap/chorus"
+tap "LargeModGames/spotatui", trusted: true
+tap "nikitabobko/tap", trusted: true
+tap "TheBoredTeam/boring-notch", trusted: true
+tap "FelixKratz/formulae", trusted: true
+tap "zennotes/tap/zennotes", trusted: true
+tap "nicojan/tap/chorus", trusted: true
+tap "abue-ammar/tinycast", trusted: true
 
 # Essential packages
 brew "btop"
@@ -56,6 +57,7 @@ cask "sf-symbols"
     # Launchers
     cask "raycast"
     cask "vicinae"
+    cask "abue-ammar/tinycast/tinycast"
 
     # Music
     cask "spotify"
