@@ -41,3 +41,4 @@ palette = 15=#e8edf3
 
 keybind = shift+enter=text:\x1b\r
 confirm-close-surface = false
+macos-option-as-alt = true
