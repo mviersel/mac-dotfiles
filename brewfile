@@ -29,6 +29,8 @@ brew "tree"
 brew "yazi"
 brew "yt-dlp"
 brew "zsh-autosuggestions"
+brew "cmake"
+brew "typst"
 
 # Fonts
 cask "font-fira-code-nerd-font"
