@@ -95,3 +95,6 @@ bindkey -e
 
 echo "(y)=Yazi (t)=Tmux (v)=nVim"
 fastfetch
+
+# opencode
+export PATH=/Users/m102334/.opencode/bin:$PATH
