@@ -4,8 +4,8 @@ LOCATION_JSON="$(curl -sf "https://ipwho.is/" 2>/dev/null)"
 
 [ -z "$LOCATION_JSON" ] && exit 0
 
-LATITUDE="$(printf '%s' "$LOCATION_JSON" | tr -d '\n' | awk -F'"latitude":' '{print $2}' | awk -F',' '{print $1}')"
-LONGITUDE="$(printf '%s' "$LOCATION_JSON" | tr -d '\n' | awk -F'"longitude":' '{print $2}' | awk -F',' '{print $1}')"
+LATITUDE="$(printf '%s' "$LOCATION_JSON" | jq -r '.latitude // empty')"
+LONGITUDE="$(printf '%s' "$LOCATION_JSON" | jq -r '.longitude // empty')"
 
 [ -z "$LATITUDE" ] || [ -z "$LONGITUDE" ] && exit 0
 
@@ -13,9 +13,8 @@ WEATHER_JSON="$(curl -sf "https://api.open-meteo.com/v1/forecast?latitude=${LATI
 
 [ -z "$WEATHER_JSON" ] && exit 0
 
-CURRENT_JSON="$(printf '%s' "$WEATHER_JSON" | tr -d '\n' | awk -F'"current":\{' '{print $2}' | awk -F'\}' '{print $1}')"
-TEMPERATURE="$(printf '%s' "$CURRENT_JSON" | awk -F'"temperature_2m":' '{print $2}' | awk -F',' '{print $1}')"
-WEATHER_CODE="$(printf '%s' "$CURRENT_JSON" | awk -F'"weather_code":' '{print $2}' | awk -F',' '{print $1}')"
+TEMPERATURE="$(printf '%s' "$WEATHER_JSON" | jq -r '.current.temperature_2m // empty')"
+WEATHER_CODE="$(printf '%s' "$WEATHER_JSON" | jq -r '.current.weather_code // empty')"
 
 [ -z "$TEMPERATURE" ] || [ -z "$WEATHER_CODE" ] && exit 0
 
