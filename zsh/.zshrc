@@ -5,6 +5,7 @@ export VISUAL=nvim
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
 source "$HOME/.cargo"
+source <(fzf --zsh)
 
 source ~/.config/zsh/functions.zsh
 source ~/.config/zsh/aliases.zsh
@@ -14,6 +15,7 @@ source ~/.config/zsh/git.sh
 export PATH="$PATH:/opt/homebrew/bin/ffmpeg"
 export PATH="/Applications/MacPorts/Emacs.app/Contents/MacOS:$PATH"
 export PATH="$HOME/.config/emacs/bin:$PATH"
+export PATH="$HOME/Library/Python/3.9/bin:$PATH"
 
 alias obidian="NVIM_APPNAME=obidian nvim"
 alias nvif='nvim $(fzf)'
