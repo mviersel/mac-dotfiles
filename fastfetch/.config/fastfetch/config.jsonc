@@ -15,7 +15,14 @@
     "padding": {
       "top": 2,
       "left": 6,
-      "right": 2,
+      "right": 6,
+    },
+  },
+
+  "display": {
+    "color": {
+      "keys": "#B7D4B8",
+      "output": "white",
     },
   },
   "modules": [
@@ -27,27 +34,22 @@
     {
       "type": "host",
       "key": "󰌢  PC",
-      "keyColor": "#B7D4B8",
     },
     {
       "type": "cpu",
       "key": "│ ├󰻠 ",
-      "keyColor": "#B7D4B8",
     },
     {
       "type": "gpu",
       "key": "│ ├󰍹 ",
-      "keyColor": "#B7D4B8",
     },
     {
       "type": "memory",
       "key": "│ ├󰑭 ",
-      "keyColor": "#B7D4B8",
     },
     {
       "type": "disk",
       "key": "└ └󰋊 ",
-      "keyColor": "#B7D4B8",
     },
     {
       "type": "custom",
@@ -61,53 +63,43 @@
     {
       "type": "os",
       "key": "  OS",
-      "keyColor": "#B7D4B8",
     },
     {
       "type": "kernel",
       "key": "│ ├󰌽 ",
-      "keyColor": "#B7D4B8",
     },
     {
       "type": "bios",
       "key": "│ ├󰖡 ",
-      "keyColor": "#B7D4B8",
     },
     {
       "type": "packages",
       "key": "│ ├󰏗 ",
-      "keyColor": "#B7D4B8",
     },
     {
       "type": "shell",
       "key": "└ └󰞷 ",
-      "keyColor": "#B7D4B8",
     },
     "break",
     {
       "type": "de",
       "key": "󰧨  DE",
-      "keyColor": "#B7D4B8",
     },
     {
       "type": "lm",
       "key": "│ ├󰍁 ",
-      "keyColor": "#B7D4B8",
     },
     {
       "type": "wm",
       "key": "│ ├󱂬 ",
-      "keyColor": "#B7D4B8",
     },
     {
       "type": "wmtheme",
       "key": "│ ├󰉦 ",
-      "keyColor": "#B7D4B8",
     },
     {
       "type": "terminal",
       "key": "└ └󰆍 ",
-      "keyColor": "#B7D4B8",
     },
     {
       "type": "custom",
@@ -121,18 +113,19 @@
     {
       "type": "command",
       "key": "  ›  OS Age  ",
-      "keyColor": "#B7D4B8",
       "text": "birth_install=$(stat -c %W /); current=$(date +%s); time_progression=$((current - birth_install)); days_difference=$((time_progression / 86400)); echo $days_difference days",
     },
     {
       "type": "uptime",
       "key": "  ›  Uptime  ",
-      "keyColor": "#B7D4B8",
     },
     {
       "type": "datetime",
       "key": "  ›  DateTime  ",
-      "keyColor": "#B7D4B8",
+    },
+    {
+      "type": "battery",
+      "key": "  ›  battery",
     },
     {
       "type": "custom",
@@ -142,11 +135,6 @@
       "type": "colors",
       "paddingLeft": 2,
       "symbol": "circle",
-    },
-    {
-      "type": "battery",
-      "key": "battery",
-      "keyColor": "#B7D4B8",
     },
     // "break",
     // { "type": "datetime", "key": "Time", "keywidth": 10 }
