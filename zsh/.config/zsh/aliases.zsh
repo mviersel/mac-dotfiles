@@ -2,6 +2,7 @@ alias cl="print '\033c' && fastfetch"
 alias brundle="brew bundle --file ~/mac-dotfiles/brewfiles/brewfile "
 
 alias la="ls -la"
+alias cdl="cd && clear && fastfetch"
 
 alias tma="tmux attach"
 alias tmd="tmux detach"
