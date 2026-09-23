@@ -13,3 +13,8 @@ defaults write .GlobalPreferences com.apple.mouse.scaling -1
 defaults write com.apple.BezelServices kDimTime -int 30
 
 defaults write com.apple.Accessibility EnhancedBackgroundContrastEnabled -bool true
+
+# Accessibility: zoom with scroll gesture while holding Control (⌃)
+defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
+defaults write com.apple.AppleMultitouchTrackpad HIDScrollZoomModifierMask -int 262144
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad HIDScrollZoomModifierMask -int 262144
