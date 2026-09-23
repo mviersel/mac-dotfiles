@@ -58,6 +58,7 @@ cask "sf-symbols"
 
     # Launchers
     cask "raycast"
+    cask "look"
     cask "vicinae"
     cask "abue-ammar/tinycast/tinycast"
 
