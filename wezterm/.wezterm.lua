@@ -22,5 +22,7 @@ config.window_padding = {
 }
 config.enable_tab_bar = false
 
+config.window_close_confirmation = "NeverPrompt"
+
 -- Finally, return the configuration to wezterm:
 return config
