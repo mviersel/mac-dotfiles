@@ -22,3 +22,7 @@ alias bar-reload="sketchybar --reload"
 
 alias border-start="brew services start felixkratz/formulae/borders"
 alias border-stop="brew services stop felixkratz/formulae/borders"
+
+alias zshali="nvim ~/.config/zsh/aliases.zsh"
+alias zshfunc="nvim ~/.config/zsh/functions.zsh"
+alias zshyt="nvim ~/.config/zsh/ytdlp.zsh"
