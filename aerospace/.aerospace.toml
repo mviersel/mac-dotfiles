@@ -286,6 +286,10 @@ on-mode-changed = []
     if.app-id = 'md.obsidian'
     run = ['move-node-to-workspace 4']
 
+    [[on-window-detected]]
+    if.app-id = 'com.apple.reminders'
+    run = ['move-node-to-workspace 4']
+
     # Workspace 5
 
     # Workspace 6
@@ -293,21 +297,20 @@ on-mode-changed = []
 
     # Workspace 7
 
-    [[on-window-detected]]
-    if.app-id = 'app.zen-browser.zen'
-    run = ['move-node-to-workspace 7']
-
-    [[on-window-detected]]
-    if.app-id = 'com.brave.Browser'
-    run = ['move-node-to-workspace 7']
-
-
-    [[on-window-detected]]
-    if.app-id = 'com.BASCOM-CLIENT'
-    run = ['move-node-to-workspace 7']
 
     # Workspace 8 
 
+    [[on-window-detected]]
+    if.app-id = 'app.zen-browser.zen'
+    run = ['move-node-to-workspace 8']
+
+    [[on-window-detected]]
+    if.app-id = 'com.brave.Browser'
+    run = ['move-node-to-workspace 8']
+
+    [[on-window-detected]]
+    if.app-id = 'com.BASCOM-CLIENT'
+    run = ['move-node-to-workspace 8']
     [[on-window-detected]]
     if.app-id = 'net.whatsapp.WhatsApp'
     run = ['move-node-to-workspace 8']
