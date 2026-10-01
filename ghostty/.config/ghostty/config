@@ -1,6 +1,6 @@
 # onthoudt bij veranderingen cmd+ctrl+,
 font-family = "FiraCode Nerd Font"
-font-size = 16
+font-size = 14
 
 # Clean soft-dark look with a little translucency.
 background = #110F08
