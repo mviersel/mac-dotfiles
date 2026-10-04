@@ -17,18 +17,28 @@
    },
    "theme": {
       "dark": {
-         "name": "vicinae-dark"
+         "name": "elementary-dark"
       }
    },
    "telemetry": {
       "system_info": false
    },
    "launcher_window": {
+      "opacity": 0.55,
       "compact_mode": {
          "enabled": true
-      }
+      },
+      "material": "auto"
    },
    "providers": {
+      "@local/native-timer": {
+         "preferences": {
+            "longBreakMinutes": "15",
+            "shortBreakMinutes": "5",
+            "shortcutName": "Vicinae Timer",
+            "workMinutes": "25"
+         }
+      },
       "files": {
          "entrypoints": {
             "search": {
