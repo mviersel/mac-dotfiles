@@ -93,6 +93,7 @@ cask "sf-symbols"
     # Utilties
     cask "bambu-studio"
     cask "Karabiner-Elements"
+    cask "hammerspoon"
     cask "latest"
     cask "pearcleaner"
     cask "whatsapp"
