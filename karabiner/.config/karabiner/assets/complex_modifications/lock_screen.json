@@ -1,0 +1,26 @@
+{
+  "title": "Lock Mac with Cmd+Shift+Q",
+  "rules": [
+    {
+      "description": "Cmd+Shift+Q -> Lock Screen",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "q",
+            "modifiers": {
+              "mandatory": ["command", "shift"],
+              "optional": ["caps_lock"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "q",
+              "modifiers": ["control", "command"]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
