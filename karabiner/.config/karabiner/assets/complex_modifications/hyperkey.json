@@ -1,0 +1,31 @@
+{
+  "description": "J+K+L as Hyper",
+  "manipulators": [
+    {
+      "type": "basic",
+      "from": {
+        "simultaneous": [
+          { "key_code": "j" },
+          { "key_code": "k" },
+          { "key_code": "l" }
+        ],
+        "modifiers": {
+          "optional": ["any"]
+        }
+      },
+      "to": [
+        {
+          "key_code": "left_shift",
+          "modifiers": [
+            "left_command",
+            "left_control",
+            "left_option"
+          ]
+        }
+      ],
+      "parameters": {
+        "basic.simultaneous_threshold_milliseconds": 80
+      }
+    }
+  ]
+}
