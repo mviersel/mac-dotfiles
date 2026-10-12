@@ -26,3 +26,5 @@ alias border-stop="brew services stop felixkratz/formulae/borders"
 alias zshali="nvim ~/.config/zsh/aliases.zsh"
 alias zshfunc="nvim ~/.config/zsh/functions.zsh"
 alias zshyt="nvim ~/.config/zsh/ytdlp.zsh"
+
+alias ds_delete="find . -type f -name '.DS_Store' -delete"
