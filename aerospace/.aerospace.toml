@@ -227,6 +227,7 @@ on-mode-changed = []
     if.app-id = 'com.apple.ActivityMonitor'
     run = ['layout floating']
 
+
     [[on-window-detected]]
     if.app-id = 'com.electron.realtimeboard'
     run = ['layout floating']
@@ -237,10 +238,6 @@ on-mode-changed = []
 
     [[on-window-detected]]
     if.app-id = 'org.openlogi.openlogi'
-    run = ['layout floating']
-
-    [[on-window-detected]]
-    if.app-id = 'org.pqrs.Karabiner-Elements.Settings'
     run = ['layout floating']
 
     # [[on-window-detected]]
