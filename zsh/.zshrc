@@ -12,6 +12,7 @@ source ~/.config/zsh/aliases.zsh
 source ~/.config/zsh/ytdlp.zsh
 source ~/.config/zsh/git.sh
 
+export PATH="$HOME/.local/bin:$PATH"
 export PATH="$PATH:/opt/homebrew/bin/ffmpeg"
 export PATH="/Applications/MacPorts/Emacs.app/Contents/MacOS:$PATH"
 export PATH="$HOME/.config/emacs/bin:$PATH"
