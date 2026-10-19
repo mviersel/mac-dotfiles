@@ -32,3 +32,7 @@ amnirules() (
       omniwmctl rule apply --pid "$pid"
     done
 )
+
+kitty-reload() {
+    kill -SIGUSR1 $(pidof kitty)
+}

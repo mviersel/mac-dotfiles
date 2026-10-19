@@ -63,6 +63,46 @@ bindkey -s ^a "nvims\n"
 
 alias nvik="NVIM_APPNAME='nvik' nvim"
 
+
+# if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
+#   tmux has-session -t home 2>/dev/null ||
+#     tmux new-session -d -s home -c "$HOME"
+#
+#   tmux has-session -t btop 2>/dev/null ||
+#     tmux new-session -d -s btop btop
+#
+#   tmux has-session -t spotify 2>/dev/null || {
+#     tmux new-session -d -s spotify
+#     tmux send-keys -t spotify "spotatui" Enter
+#   }
+#
+#   tmux has-session -t notes 2>/dev/null ||
+#     tmux new-session -d -s notes -c "$HOME/obidian" nvim home.md
+#
+#   tmux has-session -t dotfiles 2>/dev/null ||
+#     tmux new-session -d -s dotfiles -c "$HOME/mac-dotfiles"
+#
+#   tmux has-session -t opencode 2>/dev/null ||
+#     tmux new-session -d -s opencode -c "$HOME"
+#
+#   tmux has-session -t yazi 2>/dev/null ||   {
+#     tmux new-session -d -s yazi -c "$HOME"
+#     tmux send-keys -t yazi "y" Enter
+#   }
+#
+#   tmux attach-session -t home
+# fi
+
+
+# Initialize and attach tmux
+if [[ -o interactive && -z "${TMUX:-}" && -t 0 ]]; then
+    if command -v tmux &>/dev/null; then
+        tmux-init home
+        tmux attach-session -t "=home"
+    fi
+fi
+
+
 # zet keybinds in terminal terug naar emacs variant. NA ALLE VIM FUNCTIONS LATEN STAAN
 bindkey -e
 
