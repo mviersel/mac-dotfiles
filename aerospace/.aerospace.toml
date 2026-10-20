@@ -261,9 +261,9 @@ on-mode-changed = []
     if.app-id = 'com.electron.realtimeboard'
     run = ['move-node-to-workspace 1']
 
-    [[on-window-detected]]
-    if.app-id = 'com.microsoft.Word'
-    run = ['move-node-to-workspace 1']
+    # [[on-window-detected]]
+    # if.app-id = 'com.microsoft.Word'
+    # run = ['move-node-to-workspace 1']
 
     # Workspace 2
 
