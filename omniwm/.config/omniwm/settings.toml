@@ -45,13 +45,13 @@ raiseOnMouseFocus = false
 
 [gaps]
 fullscreenUsesOuterGaps = true
-size = 6.0
+size = 10.0
 
 [gaps.outer]
 bottom = 8.0
 left = 12.0
 right = 12.0
-top = 36.0
+top = 38.0
 
 [general]
 animationSpeed = 1.25
@@ -89,6 +89,16 @@ enabled = true
 hiddenBundleIDs = []
 rehideIntervalSeconds = 5.0
 
+[monitors]
+
+[[monitors.ranking]]
+displayUUID = "82D0DA7C-6376-451D-9DC2-E2E32F279A83"
+name = "27GL850"
+
+[[monitors.ranking]]
+displayUUID = "37D8832A-2D66-02CA-B9F7-8F30A301B230"
+name = "Built-in Retina Display"
+
 [mouseWarp]
 constrainToArrangement = false
 enabled = false
@@ -96,9 +106,8 @@ margin = 1
 
 [niri]
 alwaysCenterSingleColumn = false
-centerFocusedColumn = "always"
+centerFocusedColumn = "never"
 containerPrimarySpanPresets = [0.3333333333333333, 0.5, 0.6666666666666666]
-defaultContainerPrimarySpan = 0.5
 edgeGaps = false
 infiniteLoop = false
 resizeStepPercent = 5
@@ -184,30 +193,30 @@ autoHideHideDelayMilliseconds = 0.0
 autoHideRevealDelayMilliseconds = 0.0
 backgroundOpacity = 0.1
 deduplicateAppIcons = false
-enabled = true
-excludedBundleIDs = []
+enabled = false
+excludedBundleIDs = ["com.apple.finder"]
 height = 24.0
 hideEmptyWorkspaces = false
-hideInNativeFullscreen = false
+hideInNativeFullscreen = true
 hoverPreviewsEnabled = false
 notchActiveZoneWidth = 180.0
-notchMode = "splitActiveLeft"
+notchMode = "splitActiveRight"
 notificationBadgeRefreshIntervalSeconds = 5.0
 notificationBadges = "off"
-position = "overlappingMenuBar"
+position = "left"
 reserveLayoutSpace = false
 revealHoldMilliseconds = 200.0
 revealModifier = "off"
 showAccentHighlights = true
 showFloatingWindows = false
 showItemBackgrounds = true
-showLabels = true
+showLabels = false
 solidBlackBackground = false
 systemStatsButton = false
 transparentBackground = false
 windowLevel = "popup"
 xOffset = 0.0
-yOffset = 0.0
+yOffset = 2.0
 
 [workspaceBar.iconOverrides]
 
@@ -217,21 +226,18 @@ id = "6A31F08A-4051-4354-B439-42F4C71894A3"
 minHeight = 600.0
 minWidth = 800.0
 
-
 [[appRules]]
 bundleId = "com.eltima.cmd1.pro.mas"
 id = "4BA546DA-2875-4BEF-B13F-1539E833B1A0"
 minHeight = 550.0
 minWidth = 950.0
 
-
 [[appRules]]
-bundleId = "com.google.Chrome"
 assignToWorkspace = "2"
+bundleId = "com.google.Chrome"
 id = "486CEFA6-69AA-4A3C-AF27-BCD38F4F138B"
 minHeight = 375.0
 minWidth = 500.0
-
 
 [[appRules]]
 bundleId = "dev.zed.Zed"
@@ -239,46 +245,40 @@ id = "979F05F4-FFA2-4EDD-B23F-08A9944C759F"
 minHeight = 240.0
 minWidth = 360.0
 
-
 [[appRules]]
-bundleId = "com.apple.Safari"
 assignToWorkspace = "2"
+bundleId = "com.apple.Safari"
 id = "81426D13-C1A5-475E-AFBC-00BBA05042D0"
 minHeight = 220.0
 minWidth = 574.0
 
-
 [[appRules]]
-bundleId = "app.zen-browser.zen"
 assignToWorkspace = "8"
+bundleId = "app.zen-browser.zen"
 id = "1CF39647-F30D-4E76-9686-79B551F1B094"
 minHeight = 495.0
 minWidth = 500.0
 
-
 [[appRules]]
-bundleId = "org.mozilla.firefox"
 assignToWorkspace = "2"
+bundleId = "org.mozilla.firefox"
 id = "005C00D3-F665-47F8-BDAE-D80790E9E46B"
 minHeight = 120.0
 minWidth = 500.0
 
-
 [[appRules]]
-bundleId = "company.thebrowser.dia"
 assignToWorkspace = "2"
+bundleId = "company.thebrowser.dia"
 id = "C21156B1-0224-4998-97E3-8F4FA65B9F3B"
 minHeight = 420.0
 minWidth = 500.0
 
-
 [[appRules]]
+assignToWorkspace = "10"
 bundleId = "com.spotify.client"
 id = "2DE9390B-0DB4-4D0C-9ABA-06F76F1D4EA9"
 minHeight = 600.0
 minWidth = 800.0
-assignToWorkspace = "10"
-
 
 [[appRules]]
 bundleId = "com.hnc.Discord"
@@ -286,22 +286,19 @@ id = "AF752D95-8497-4844-BE20-4C93E73BAEF2"
 minHeight = 500.0
 minWidth = 800.0
 
-
 [[appRules]]
-bundleId = "com.mitchellh.ghostty"
 assignToWorkspace = "8"
+bundleId = "com.mitchellh.ghostty"
 id = "7876C9EF-437E-4D4F-9C27-B1B02F4AABCE"
 minHeight = 48.0
 minWidth = 90.0
 
-
 [[appRules]]
+assignToWorkspace = "3"
 bundleId = "com.microsoft.Outlook"
 id = "8ECAB78B-BCDD-4245-BC25-1609A49B1C86"
 minHeight = 650.0
 minWidth = 930.0
-assignToWorkspace = "3"
-
 
 [[appRules]]
 bundleId = "com.apple.MobileSMS"
@@ -309,80 +306,71 @@ id = "552FB77D-BF0E-4737-90A6-B5BC6986C579"
 minHeight = 320.0
 minWidth = 660.0
 
-
 [[appRules]]
+assignToWorkspace = "4"
 bundleId = "md.obsidian"
+id = "BC9F70D6-B353-44CD-ADA7-A4C1CEAD3CE6"
 layout = "tile"
-assignToWorkspace = "4"
-
 
 [[appRules]]
+assignToWorkspace = "4"
 bundleId = "com.apple.reminders"
+id = "645FD176-02F5-45AB-9395-CE3EE108924C"
 layout = "tile"
-assignToWorkspace = "4"
-
 
 [[appRules]]
+assignToWorkspace = "1"
 bundleId = "com.figma.Desktop"
 id = "891D8091-FD2E-55E2-B672-C010657D3CDF"
 layout = "tile"
-assignToWorkspace = "1"
-
 
 [[appRules]]
+assignToWorkspace = "1"
 bundleId = "com.electron.realtimeboard"
 id = "AEBDE3BB-98A6-5D81-BE41-B14C6E9C8522"
 layout = "tile"
-assignToWorkspace = "1"
-
 
 [[appRules]]
+assignToWorkspace = "1"
 bundleId = "com.microsoft.Word"
 id = "E5AB1B78-CC2C-51AA-BC29-4EB245EEA0BA"
 layout = "tile"
-assignToWorkspace = "1"
-
 
 [[appRules]]
+assignToWorkspace = "2"
 bundleId = "net.imput.helium"
 id = "E7F24BF5-C32E-5899-8619-1CC9898FD73E"
 layout = "tile"
-assignToWorkspace = "2"
-
 
 [[appRules]]
+assignToWorkspace = "3"
 bundleId = "com.microsoft.teams"
 id = "71CD6EAE-47F2-586F-A40D-678F8DC18421"
 layout = "tile"
-assignToWorkspace = "3"
-
 
 [[appRules]]
+assignToWorkspace = "8"
 bundleId = "com.brave.Browser"
 id = "7716724A-6D99-5E78-9320-E672F76D1EA4"
 layout = "tile"
-assignToWorkspace = "8"
-
 
 [[appRules]]
+assignToWorkspace = "8"
 bundleId = "com.BASCOM-CLIENT"
 id = "D487D1E1-8C4A-5E68-9CF6-C4EA0E8FB5D5"
 layout = "tile"
-assignToWorkspace = "8"
-
 
 [[appRules]]
+assignToWorkspace = "8"
 bundleId = "com.nicojan.Chorus"
 id = "36E45316-55D9-5FFD-A793-EEF8B43550CC"
 layout = "tile"
-assignToWorkspace = "8"
-
 
 [[appRules]]
+assignToWorkspace = "8"
 bundleId = "net.kovidgoyal.kitty"
 id = "8730FB7D-066B-5E3A-B9ED-D5DAC4C2486C"
 layout = "tile"
-assignToWorkspace = "8"
 
 [[hotkeys]]
 binding = "Unassigned"
@@ -535,6 +523,14 @@ id = "switchWorkspace.8"
 [[hotkeys]]
 binding = "Option+Shift+9"
 id = "moveToWorkspace.8"
+
+[[hotkeys]]
+binding = "Option+0"
+id = "switchWorkspace.9"
+
+[[hotkeys]]
+binding = "Option+Shift+0"
+id = "moveToWorkspace.9"
 
 [[hotkeys]]
 binding = "Unassigned"
@@ -731,6 +727,10 @@ id = "moveColumnToWorkspace.7"
 [[hotkeys]]
 binding = "Unassigned"
 id = "moveColumnToWorkspace.8"
+
+[[hotkeys]]
+binding = "Unassigned"
+id = "moveColumnToWorkspace.9"
 
 [[hotkeys]]
 binding = "Option+Shift+H"
@@ -1148,53 +1148,47 @@ id = "toggleOverview"
 binding = "Unassigned"
 id = "toggleSystemStats"
 
-[[hotkeys]]
-binding = "Option+0"
-id = "switchWorkspace.9"
-[[hotkeys]]
-binding = "Option+Shift+0"
-id = "moveToWorkspace.9"
 [[workspaces]]
-id = "AD36F001-C57E-41A5-AC1D-DF5249D007F0"
-layoutType = "niri"
-name = "1"
 displayName = "1 · Work"
+id = "AD36F001-C57E-41A5-AC1D-DF5249D007F0"
+layoutType = "dwindle"
+name = "1"
 
 [workspaces.monitorAssignment]
 type = "main"
 
 [[workspaces]]
-id = "454CECD4-5E9D-4ED1-95D7-979D48817F5F"
-layoutType = "niri"
-name = "2"
 displayName = "2 · Browser"
+id = "454CECD4-5E9D-4ED1-95D7-979D48817F5F"
+layoutType = "dwindle"
+name = "2"
 
 [workspaces.monitorAssignment]
 type = "main"
 
 [[workspaces]]
-id = "BEB842B5-E894-4791-9FD1-397C3CDD3538"
-layoutType = "niri"
-name = "3"
 displayName = "3 · Communication"
+id = "BEB842B5-E894-4791-9FD1-397C3CDD3538"
+layoutType = "dwindle"
+name = "3"
 
 [workspaces.monitorAssignment]
 type = "main"
 
 [[workspaces]]
+displayName = "4 · Notes"
 id = "248AA883-2261-4D45-943C-79C0E46A232B"
 layoutType = "dwindle"
 name = "4"
-displayName = "4 · Notes"
 
 [workspaces.monitorAssignment]
 type = "main"
 
 [[workspaces]]
+displayName = "5"
 id = "8B8C45D6-CE9E-41D9-BD50-BE4989D5E3DE"
 layoutType = "default"
 name = "5"
-displayName = "5"
 
 [workspaces.monitorAssignment]
 type = "main"
@@ -1218,35 +1212,28 @@ name = "7"
 type = "main"
 
 [[workspaces]]
-id = "0E18F6B0-345A-4078-8B21-33641F07A861"
-layoutType = "niri"
-name = "8"
 displayName = "8 · Background"
+id = "0E18F6B0-345A-4078-8B21-33641F07A861"
+layoutType = "dwindle"
+name = "8"
 
 [workspaces.monitorAssignment]
 type = "secondary"
 
 [[workspaces]]
-id = "8D4D711C-2B2F-4FEC-86BF-FA952037738A"
-layoutType = "niri"
-name = "9"
 displayName = "9 · Flex"
+id = "8D4D711C-2B2F-4FEC-86BF-FA952037738A"
+layoutType = "dwindle"
+name = "9"
 
 [workspaces.monitorAssignment]
 type = "secondary"
 
 [[workspaces]]
-id = "DA2BF2AC-E977-4DD0-AA50-871AD6AFC43A"
-name = "10"
 displayName = "0 · Music"
-layoutType = "niri"
+id = "DA2BF2AC-E977-4DD0-AA50-871AD6AFC43A"
+layoutType = "dwindle"
+name = "10"
 
 [workspaces.monitorAssignment]
 type = "secondary"
-[[monitors.ranking]]
-name = "27GL850"
-displayUUID = "82D0DA7C-6376-451D-9DC2-E2E32F279A83"
-
-[[monitors.ranking]]
-name = "Built-in Retina Display"
-displayUUID = "37D8832A-2D66-02CA-B9F7-8F30A301B230"
