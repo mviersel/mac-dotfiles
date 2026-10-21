@@ -6,9 +6,11 @@ tap "FelixKratz/formulae", trusted: true
 tap "zennotes/tap/zennotes", trusted: true
 tap "nicojan/tap/chorus", trusted: true
 tap "abue-ammar/tinycast", trusted: true
+tap "osx-cross/avr", trusted: true
 
 # Essential packages
 brew "btop"
+brew "avr-gcc"
 brew "cmatrix"
 brew "fastfetch"
 brew "ffmpeg"
