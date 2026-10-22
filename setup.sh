@@ -4,18 +4,25 @@ set -euo pipefail
 DOTFILES_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 PACKAGES=(
-    glazewm
+    git
     aerospace
+    backgrounds
+    bin
     fastfetch
     ghostty
     git
+    glazewm
+    hammerspoon
+    karabiner
     kitty
     nvim
+    omniwm
     sketchybar
     tmux
+    vicinae
+    wezterm
+    yazi
     zsh
-    backgrounds
-    karabiner
 )
 
 log() {
