@@ -101,6 +101,7 @@ cask "sf-symbols"
     cask "whatsapp"
     cask "miro"
     cask "figma"
+    cask "rayhatfield/mac-media-keys/mac-media-keys"
 
     # Menubar
     cask "hiddenbar"
