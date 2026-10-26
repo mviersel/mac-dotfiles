@@ -84,7 +84,7 @@ cask "sf-symbols"
     cask "zen"
 
     # Notes
-    cask "zennotes"
+    cask "zennotes/tap/zennotes"
     cask "obsidian"
 
     # Monitor
