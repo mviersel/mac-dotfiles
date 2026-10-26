@@ -67,7 +67,7 @@ updateChecksEnabled = true
 [gestures]
 fingerCount = 3
 invertDirection = true
-mouseMoveModifierKey = "option"
+mouseMoveModifierKey = "off"
 mouseResizeModifierKey = "option"
 overviewGestureEnabled = false
 overviewGestureFingerCount = 4
@@ -94,6 +94,10 @@ rehideIntervalSeconds = 5.0
 [[monitors.ranking]]
 displayUUID = "82D0DA7C-6376-451D-9DC2-E2E32F279A83"
 name = "27GL850"
+
+[[monitors.ranking]]
+displayUUID = "4A705715-7FE1-4F93-A657-D564701F08D0"
+name = "HP 534pm"
 
 [[monitors.ranking]]
 displayUUID = "37D8832A-2D66-02CA-B9F7-8F30A301B230"
@@ -1151,7 +1155,7 @@ id = "toggleSystemStats"
 [[workspaces]]
 displayName = "1 · Work"
 id = "AD36F001-C57E-41A5-AC1D-DF5249D007F0"
-layoutType = "dwindle"
+layoutType = "niri"
 name = "1"
 
 [workspaces.monitorAssignment]
