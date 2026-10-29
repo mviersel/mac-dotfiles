@@ -1,3 +1,6 @@
+# zet keybinds in terminal terug naar emacs variant. NA ALLE VIM FUNCTIONS LATEN STAAN
+bindkey -e
+
 export EDITOR=nvim
 export VISUAL=nvim
 
@@ -17,7 +20,9 @@ export PATH="$PATH:/opt/homebrew/bin/ffmpeg"
 export PATH="/Applications/MacPorts/Emacs.app/Contents/MacOS:$PATH"
 export PATH="$HOME/.config/emacs/bin:$PATH"
 export PATH="$HOME/Library/Python/3.9/bin:$PATH"
-export PATH="/Users/m102334/.local/bin:$PATH"
+
+# opencode
+export PATH=/Users/m102334/.opencode/bin:$PATH
 
 alias obidian="NVIM_APPNAME=obidian nvim"
 alias nvif='nvim $(fzf)'
@@ -38,9 +43,8 @@ function nvims() {
 }
 
 function cl() {
-	clear
-    echo "(y)=Yazi (t)=Tmux (v)=nVim"
-	fastfetch
+    printf '\033[H\033[2J\033[3J'
+    fastfetch
 }
 
 function brundle() {
@@ -103,12 +107,4 @@ if [[ -o interactive && -z "${TMUX:-}" && -t 0 ]]; then
     fi
 fi
 
-
-# zet keybinds in terminal terug naar emacs variant. NA ALLE VIM FUNCTIONS LATEN STAAN
-bindkey -e
-
-echo "(y)=Yazi (t)=Tmux (v)=nVim"
 fastfetch
-
-# opencode
-export PATH=/Users/m102334/.opencode/bin:$PATH
