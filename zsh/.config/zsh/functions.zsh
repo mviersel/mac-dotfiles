@@ -36,3 +36,26 @@ amnirules() (
 kitty-reload() {
     kill -SIGUSR1 $(pidof kitty)
 }
+
+bundleid() {
+    if [[ -z "$1" ]]; then
+        echo "Gebruik: bundleid <appnaam>" >&2
+        return 1
+    fi
+
+    local id
+    id=$(osascript - "$1" <<'APPLESCRIPT' 2>/dev/null
+on run argv
+    set appName to item 1 of argv
+    return id of application appName
+end run
+APPLESCRIPT
+    )
+
+    if [[ -z "$id" ]]; then
+        echo "Applicatie niet gevonden: $1" >&2
+        return 1
+    fi
+
+    printf '%s\n' "$id"
+}
