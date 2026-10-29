@@ -1,0 +1,24 @@
+{
+  "description": "Launch or focus Kitty",
+  "manipulators": [
+    {
+      "type": "basic",
+      "from": {
+        "key_code": "return_or_enter",
+        "modifiers": {
+          "mandatory": ["option", "shift"],
+          "optional": ["any"]
+        }
+      },
+      "to": [
+        {
+          "software_function": {
+            "open_application": {
+              "bundle_identifier": "net.kovidgoyal.kitty"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
