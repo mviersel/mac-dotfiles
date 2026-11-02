@@ -111,7 +111,7 @@ margin = 1
 [niri]
 alwaysCenterSingleColumn = false
 centerFocusedColumn = "never"
-containerPrimarySpanPresets = [0.3333333333333333, 0.5, 0.6666666666666666]
+containerPrimarySpanPresets = [0.3333333333333333, 0.5, 0.6666666666666666, 1.0]
 edgeGaps = false
 infiniteLoop = false
 resizeStepPercent = 5
@@ -250,7 +250,6 @@ id = "005C00D3-F665-47F8-BDAE-D80790E9E46B"
 layout = "tile"
 
 [[appRules]]
-assignToWorkspace = "2"
 bundleId = "net.imput.helium"
 id = "1E6F25E1-E962-4442-8C2B-C7B64AF04DF4"
 layout = "tile"
@@ -269,7 +268,7 @@ layout = "tile"
 
 [[appRules]]
 assignToWorkspace = "3"
-bundleId = "com.microsoft.teams"
+bundleId = "com.microsoft.teams2"
 id = "71CD6EAE-47F2-586F-A40D-678F8DC18421"
 layout = "tile"
 
@@ -314,7 +313,6 @@ layout = "tile"
 bundleId = "com.apple.finder"
 id = "0DFB96B8-F96E-40AD-B5EF-0115EBFE30B7"
 layout = "tile"
-minWidth = 400.0
 
 [[appRules]]
 assignToWorkspace = "1"
