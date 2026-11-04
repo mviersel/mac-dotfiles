@@ -110,7 +110,7 @@ margin = 1
 
 [niri]
 alwaysCenterSingleColumn = false
-centerFocusedColumn = "never"
+centerFocusedColumn = "onOverflow"
 containerPrimarySpanPresets = [0.3333333333333333, 0.5, 0.6666666666666666, 1.0]
 edgeGaps = false
 infiniteLoop = false
@@ -630,7 +630,7 @@ binding = "Unassigned"
 id = "focusWindowOrWorkspaceUp"
 
 [[hotkeys]]
-binding = "Unassigned"
+binding = "Option+P"
 id = "centerColumn"
 
 [[hotkeys]]
@@ -954,7 +954,7 @@ binding = "Unassigned"
 id = "cycleWindowSecondarySpanBackward"
 
 [[hotkeys]]
-binding = "Option+Left Bracket"
+binding = "Unassigned"
 id = "toggleContainerFullPrimarySpan"
 
 [[hotkeys]]
