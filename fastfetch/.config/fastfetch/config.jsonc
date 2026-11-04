@@ -1,16 +1,17 @@
 {
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
   "logo": {
-    "type": "small",
+    // "type": "small",
     "source": "apple",
     "height": 5,
     "width": 8,
     "color": {
-      "1": "#ffffff",
-      "2": "#ffffff",
-      "3": "#ffffff",
-      "4": "#ffffff",
-      "5": "#ffffff",
+      "1": "#aab2c0",
+      "2": "#aab2c0",
+      "3": "#aab2c0",
+      "4": "#aab2c0",
+      "5": "#aab2c0",
+      "6": "#aab2c0"
     },
     "padding": {
       "top": 2,
@@ -22,7 +23,7 @@
   "display": {
     "color": {
       "keys": "#789cd8",
-      "output": "white",
+      "output": "#aab2c0",
     },
   },
   "modules": [
