@@ -105,7 +105,7 @@ name = "Built-in Retina Display"
 
 [mouseWarp]
 constrainToArrangement = false
-enabled = false
+enabled = true
 margin = 1
 
 [niri]
