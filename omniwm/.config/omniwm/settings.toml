@@ -110,7 +110,7 @@ margin = 1
 
 [niri]
 alwaysCenterSingleColumn = false
-centerFocusedColumn = "onOverflow"
+centerFocusedColumn = "never"
 containerPrimarySpanPresets = [0.3333333333333333, 0.5, 0.6666666666666666, 1.0]
 edgeGaps = false
 infiniteLoop = false
@@ -241,7 +241,6 @@ assignToWorkspace = "8"
 bundleId = "app.zen-browser.zen"
 id = "1CF39647-F30D-4E76-9686-79B551F1B094"
 layout = "tile"
-minHeight = 495.0
 
 [[appRules]]
 assignToWorkspace = "1"
@@ -330,6 +329,12 @@ minWidth = 400.0
 [[appRules]]
 bundleId = "net.kovidgoyal.kitty"
 id = "79B10451-7720-4F90-A171-DE016E42D1FA"
+layout = "tile"
+minWidth = 800.0
+
+[[appRules]]
+bundleId = "nl.local.microp"
+id = "900B4B8D-01F5-4784-B930-7896909AC56B"
 layout = "tile"
 minWidth = 800.0
 
