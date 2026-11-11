@@ -1,8 +1,8 @@
 #!/usr/bin/env sh
 
-ACCENT_COLOR=0xffffffff
-TEXT_COLOR=0xfff5f5f5
-MUTED_COLOR=0xffffffff
+ACCENT_COLOR=0xff9aa8c4
+TEXT_COLOR=0xffb8c0cc
+MUTED_COLOR=0xff59636f
 WORKSPACE="$1"
 FOCUSED="${FOCUSED_WORKSPACE:-$(aerospace list-workspaces --focused)}"
 

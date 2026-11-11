@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
-ACCENT_COLOR=0xffffffff
-MUTED_COLOR=0xffffffff
+ACCENT_COLOR=0xff9aa8c4
+MUTED_COLOR=0xff59636f
 WORKSPACE="$1"
 
 CURRENT="$({
