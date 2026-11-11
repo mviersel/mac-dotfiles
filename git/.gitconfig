@@ -6,3 +6,5 @@
 [user]
 	name = mviersel
 	email = 119597405+mviersel@users.noreply.github.com
+[core]
+	excludesfile = /Users/m102334/.gitignore_global
