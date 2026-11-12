@@ -121,6 +121,10 @@ displayUUID = "82D0DA7C-6376-451D-9DC2-E2E32F279A83"
 name = "27GL850"
 
 [[monitors.ranking]]
+displayUUID = "E0CAB386-ABBE-44C0-961E-3F518632110A"
+name = "HP 527pq"
+
+[[monitors.ranking]]
 displayUUID = "37D8832A-2D66-02CA-B9F7-8F30A301B230"
 name = "Built-in Retina Display"
 
@@ -132,7 +136,7 @@ margin = 1
 [niri]
 allowOverscroll = false
 alwaysCenterSingleColumn = false
-centerFocusedColumn = "never"
+centerFocusedColumn = "onOverflow"
 containerPrimarySpanPresets = [0.3333333333333333, 0.5, 0.6666666666666666, 1.0]
 edgeGaps = false
 infiniteLoop = false
