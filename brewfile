@@ -33,6 +33,7 @@ brew "yt-dlp"
 brew "zsh-autosuggestions"
 brew "cmake"
 brew "typst"
+brew "poppler"
 
 # Fonts
 cask "font-fira-code-nerd-font"
